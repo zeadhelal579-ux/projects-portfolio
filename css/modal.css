@@ -1,0 +1,11 @@
+/* =============================================================================
+   File: modal.css
+   Purpose: The 'Request technical brief' dialog (<dialog id="briefModal">), opened by js/main.js.
+   ============================================================================= */
+
+dialog#briefModal{border:none; border-radius:16px; padding:0; max-width:420px; width:92%; box-shadow:0 24px 60px rgba(0,0,0,.25);}
+dialog#briefModal::backdrop{background:rgba(17,24,39,.55);}
+.modal-body{padding:30px;}
+.modal-body h3{font-size:19px; margin-bottom:10px;}
+.modal-body p{font-size:14px; color:var(--ink-soft); margin-bottom:20px;}
+.modal-close{background:none; border:none; float:right; font-size:20px; cursor:pointer; color:var(--ink-soft); line-height:1;}

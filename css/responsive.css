@@ -1,0 +1,42 @@
+/* =============================================================================
+   File: responsive.css
+   Purpose: Every breakpoint of the site in one place (1000px, 960px, 900px, 800px, 700px, 560px and 520px), listed in page order. Loaded after every section file so these overrides always win the cascade.
+   ============================================================================= */
+
+@media (max-width:1080px){
+  nav.links{display:none; position:absolute; top:100%; left:0; right:0; background:#fff; flex-direction:column;
+    padding:20px 24px; gap:18px; border-bottom:1px solid var(--border); box-shadow:0 12px 24px rgba(0,0,0,.06);}
+  nav.links.open{display:flex;}
+  .burger{display:block;}
+  .nav-cta .btn-outline{display:none;}
+}
+@media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} .hero-art{width:min(100%, 240px); justify-self:start;} }
+@media (max-width:700px){ .kpi-row{grid-template-columns:1fr;} }
+@media (max-width:960px){ .awards-grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:520px){ .awards-grid{grid-template-columns:1fr;} }
+@media (max-width:960px){ .stat-grid4{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:520px){ .stat-grid4{grid-template-columns:1fr;} }
+@media (max-width:800px){ .split-2{grid-template-columns:1fr;} }
+@media (max-width:900px){ .pipeline-grid{grid-template-columns:1fr 1fr;} }
+@media (max-width:560px){ .pipeline-grid{grid-template-columns:1fr;} }
+@media (max-width:800px){ .data-grid{grid-template-columns:1fr;} .bar-row{grid-template-columns:120px 1fr 40px;} }
+@media (max-width:700px){ .proto-strip{grid-template-columns:1fr 1fr;} }
+@media (max-width:560px){ .shap-row{grid-template-columns:1fr; row-gap:6px;} }
+@media (max-width:900px){ .persona-grid{grid-template-columns:1fr 1fr;} }
+@media (max-width:520px){ .persona-grid{grid-template-columns:1fr;} .dash-kpis{grid-template-columns:1fr 1fr;} }
+@media (max-width:800px){ .screen-grid{grid-template-columns:1fr;} }
+@media (max-width:1000px){
+  .bmc-grid{grid-template-columns:1fr 1fr;}
+  .bmc-partners,.bmc-activities,.bmc-resources,.bmc-value,.bmc-relations,.bmc-channels,.bmc-segments,.bmc-cost,.bmc-revenue{grid-column:auto; grid-row:auto;}
+}
+@media (max-width:560px){ .bmc-grid{grid-template-columns:1fr;} }
+@media (max-width:900px){ .rev-grid{grid-template-columns:1fr;} }
+@media (max-width:700px){ .metric-strip{grid-template-columns:1fr;} }
+@media (max-width:700px){ .tam-grid{grid-template-columns:1fr;} }
+@media (max-width:800px){ .timeline{grid-template-columns:1fr;} }
+@media (max-width:800px){ .partner-3{grid-template-columns:1fr;} }
+@media (max-width:800px){ .impact-3{grid-template-columns:1fr;} }
+@media (max-width:800px){ .ask-card{grid-template-columns:1fr;} }
+@media (max-width:900px){ .team-grid{grid-template-columns:1fr 1fr;} }
+@media (max-width:520px){ .team-grid{grid-template-columns:1fr;} }
+@media (max-width:800px){ .footer-grid{grid-template-columns:1fr; gap:26px;} }

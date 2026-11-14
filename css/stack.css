@@ -1,0 +1,8 @@
+/* =============================================================================
+   File: stack.css
+   Purpose: Stack section (#stack): technology groups with their chips (the .tag chip itself lives in components.css).
+   ============================================================================= */
+
+.stack-cat{margin-bottom:26px;}
+.stack-cat h4{font-size:13.5px; font-weight:700; color:var(--ink-soft); margin-bottom:12px;}
+.tag-row{display:flex; flex-wrap:wrap; gap:8px;}

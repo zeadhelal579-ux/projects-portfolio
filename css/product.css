@@ -1,0 +1,25 @@
+/* =============================================================================
+   File: product.css
+   Purpose: Product section (#product): the dashboard card, the risk bar and legend, and the four .persona-card audience cards.
+   ============================================================================= */
+
+.dash-card{border:1px solid var(--border); border-radius:var(--radius); padding:28px; background:var(--ink); color:#fff;}
+.dash-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px;}
+.dash-top h4{color:#fff; font-size:16px;}
+.dash-live{font-size:12px; color:#8fe3b3; font-weight:700;}
+.dash-kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+.dash-kpis .n{font-family:var(--font-display); font-size:24px; font-weight:800;}
+.dash-kpis .l{font-size:12px; color:#a8b0bd; margin-top:4px;}
+.risk-bar{display:flex; height:14px; border-radius:8px; overflow:hidden; margin-top:24px;}
+.risk-bar div:nth-child(1){background:var(--emerald); width:88%;}
+.risk-bar div:nth-child(2){background:var(--amber); width:9%;}
+.risk-bar div:nth-child(3){background:#DC2626; width:3%;}
+.risk-legend{display:flex; gap:18px; margin-top:12px; font-size:12px; color:#a8b0bd; flex-wrap:wrap;}
+.risk-legend span::before{content:''; display:inline-block; width:9px; height:9px; border-radius:3px; margin-right:6px;}
+.rl-1::before{background:var(--emerald);}
+.rl-2::before{background:var(--amber);}
+.rl-3::before{background:#DC2626;}
+.persona-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:36px;}
+.persona-card{border:1px solid var(--border); border-radius:var(--radius); padding:22px 18px;}
+.persona-card h4{font-size:14.5px; font-weight:700; margin-bottom:8px;}
+.persona-card p{font-size:13px; color:var(--ink-soft);}

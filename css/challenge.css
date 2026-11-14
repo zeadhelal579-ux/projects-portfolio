@@ -1,0 +1,23 @@
+/* =============================================================================
+   File: challenge.css
+   Purpose: Challenge section (#challenge): quote block, four .stat-card figures, two .info-card columns and the comparison table (table.compare).
+   ============================================================================= */
+
+.quote-block{border-left:3px solid var(--emerald); padding:6px 0 6px 22px; font-size:19px; font-style:italic; color:var(--ink); max-width:760px; margin-bottom:44px;}
+.stat-grid4{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+.stat-card{border-radius:var(--radius); padding:24px 20px; background:var(--emerald);}
+.stat-card .big{font-family:var(--font-display); color:#fff; font-size:clamp(28px,3vw,36px); font-weight:800; font-variant-numeric:tabular-nums;}
+.stat-card .desc{color:#dfeee6; font-size:13.5px; margin-top:8px; line-height:1.45;}
+.stat-card.alt{background:var(--steel);}
+.stat-card.alt .desc{color:#e2e9fc;}
+.stat-card.warn{background:var(--amber);}
+.stat-card.warn .desc{color:#fbe9d0;}
+.split-2{display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:48px;}
+.info-card{border:1px solid var(--border); border-radius:var(--radius); padding:26px;}
+.info-card h4{font-size:16.5px; font-weight:700; margin-bottom:8px;}
+.info-card p{color:var(--ink-soft); font-size:14.5px;}
+table.compare{width:100%; border-collapse:collapse; margin-top:48px; font-size:14.5px;}
+table.compare th, table.compare td{padding:14px 16px; border:1px solid var(--border); text-align:left;}
+table.compare thead th{background:var(--bg-chalk); font-family:var(--font-display); font-weight:700;}
+table.compare td.win{color:var(--emerald); font-weight:700;}
+table.compare tr td:first-child{font-weight:600; background:var(--bg-chalk);}

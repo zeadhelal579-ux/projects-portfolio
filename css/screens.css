@@ -1,0 +1,6 @@
+/* Lays out the prototype workflow cards. */
+.screen-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.screen-card { border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-chalk); }
+.screen-body { padding: 24px; }
+.screen-body h4 { font-size: 1.05rem; }
+.screen-body p { font-size: .95rem; color: var(--ink-soft); margin-top: 8px; }

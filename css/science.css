@@ -1,0 +1,30 @@
+/* =============================================================================
+   File: science.css
+   Purpose: Science section (#science): CSS-only tabs (radio inputs #tab1 / #tab2), dataset numbers and bars, benchmark table (table.bench) and the prototype chips.
+   ============================================================================= */
+
+.tabs input{position:absolute; opacity:0; pointer-events:none;}
+.tab-labels{display:flex; gap:8px; border-bottom:1px solid var(--border); margin-bottom:32px;}
+.tab-labels label{padding:12px 18px; font-weight:700; font-size:14.5px; color:var(--ink-soft); cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-1px;}
+#tab1:checked ~ .tab-labels label[for="tab1"],
+#tab2:checked ~ .tab-labels label[for="tab2"]{color:var(--emerald); border-color:var(--emerald);}
+.tab-panel{display:none;}
+#tab1:checked ~ .tab-content .panel-1{display:block;}
+#tab2:checked ~ .tab-content .panel-2{display:block;}
+.data-grid{display:grid; grid-template-columns:1fr 1fr; gap:32px;}
+.bignum-row{display:flex; gap:28px; flex-wrap:wrap; margin-top:18px;}
+.bignum{font-family:var(--font-display); font-size:30px; font-weight:800; color:var(--emerald);}
+.bignum span{display:block; font-family:var(--font-body); font-size:13px; font-weight:500; color:var(--ink-soft); margin-top:4px;}
+.bar-list{margin-top:18px; display:flex; flex-direction:column; gap:12px;}
+.bar-row{display:grid; grid-template-columns:170px 1fr 50px; align-items:center; gap:10px; font-size:13.5px;}
+.bar-track{background:var(--border); border-radius:6px; height:10px; overflow:hidden;}
+.bar-fill{height:100%; background:var(--emerald); border-radius:6px;}
+table.bench{width:100%; border-collapse:collapse; font-size:13.8px; margin-top:8px;}
+table.bench th, table.bench td{padding:12px 14px; border:1px solid var(--border); text-align:center;}
+table.bench td:first-child, table.bench th:first-child{text-align:left;}
+table.bench thead th{background:var(--ink); color:#fff; font-family:var(--font-display); font-weight:700; font-size:12.5px;}
+table.bench td.best{color:var(--emerald); font-weight:700;}
+.proto-strip{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:36px;}
+.proto-chip{border:1px solid var(--border); border-radius:12px; padding:18px 14px; text-align:center;}
+.proto-chip .n{font-family:var(--font-display); font-weight:800; font-size:21px; color:var(--steel);}
+.proto-chip .l{font-size:12px; color:var(--ink-soft); margin-top:4px;}

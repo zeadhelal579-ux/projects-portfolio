@@ -1,0 +1,34 @@
+/* =============================================================================
+   File: hero.css
+   Purpose: Hero section: tag, headline, sub-text, call-to-action buttons, the logo panel and the three KPI cards (.kpi-card).
+   ============================================================================= */
+
+.hero{position:relative; overflow:hidden; padding:clamp(44px, 7vw, 96px) 0 56px; background:radial-gradient(ellipse at 95% 0%, #e3f0e6, transparent 60%);}
+.hero-grid{display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px; align-items:center;}
+.hero-tag{display:inline-block; font-size:13px; font-weight:700; color:var(--steel); background:var(--steel-soft); padding:6px 12px; border-radius:100px; margin-bottom:20px;}
+.hero h1{font-size:clamp(32px,4.6vw,52px); font-weight:800; letter-spacing:-0.035em; max-width:16ch;}
+.hero-sub{margin-top:20px; font-size:17.5px; color:var(--ink-soft); max-width:560px;}
+.hero-ctas{display:flex; gap:14px; margin-top:32px; flex-wrap:wrap;}
+.hero-art {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1;
+  justify-self: end;
+  padding: 12%;
+  background: #0a0a0a;
+  border-radius: 30px;
+  box-shadow: 0 25px 55px -26px #173d2b88;
+}
+.hero-art img { width: 100%; height: auto; }
+.kpi-row{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:56px;}
+.kpi-card{border-radius:var(--radius); padding:22px 20px; border:1px solid var(--border);}
+.kpi-card .num{font-family:var(--font-display); font-size:clamp(26px,3vw,34px); font-weight:800; font-variant-numeric:tabular-nums;}
+.kpi-card .lbl{font-size:13.5px; color:var(--ink-soft); margin-top:6px; font-weight:500; line-height:1.4;}
+.kpi-e{background:var(--emerald-soft);}
+.kpi-e .num{color:var(--emerald);}
+.kpi-s{background:var(--steel-soft);}
+.kpi-s .num{color:var(--steel);}
+.kpi-a{background:var(--amber-soft);}
+.kpi-a .num{color:var(--amber);}

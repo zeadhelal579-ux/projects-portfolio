@@ -1,0 +1,55 @@
+/* =============================================================================
+   File: base.css
+   Purpose: Design tokens (colours, radius, page width, fonts), box-sizing reset, safe-area padding, page background and base typography. Loaded first because every other file reads these variables.
+   ============================================================================= */
+
+:root{
+  --bg:#FFFFFF;
+  --bg-chalk:#F9FAFB;
+  --emerald:#115E39;
+  --emerald-ink:#0d4a2d;
+  --emerald-soft:#EAF3EE;
+  --steel:#1D4ED8;
+  --steel-soft:#EAEFFC;
+  --amber:#D97706;
+  --amber-soft:#FDF1E1;
+  --ink:#111827;
+  --ink-soft:#4B5563;
+  --border:#E5E7EB;
+  --radius:14px;
+  --maxw:1180px;
+  --font-display:'Plus Jakarta Sans', Inter, sans-serif;
+  --font-body:'Inter', sans-serif;
+}
+*{box-sizing:border-box;}
+html{
+  scroll-behavior:smooth; scroll-padding-top:calc(84px + env(safe-area-inset-top, 0px));
+  color-scheme:light;
+}
+:root{
+  padding-top:env(safe-area-inset-top, 0px);
+  padding-bottom:env(safe-area-inset-bottom, 0px);
+}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--font-body); line-height:1.6; font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block;}
+a{color:inherit;}
+h1,h2,h3,h4{font-family:var(--font-display); color:var(--ink); margin:0; line-height:1.15;}
+p{margin:0;}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 200;
+  padding: 10px 16px;
+  background: #fff;
+  color: #14251f;
+  border-radius: 8px;
+  transform: translateY(-160%);
+}
+.skip-link:focus { transform: translateY(0); }
+:focus-visible { outline: 2px solid #b66a23; outline-offset: 4px; }

@@ -1,0 +1,7 @@
+/* =============================================================================
+   File: contact.css
+   Purpose: Contact section (#contact): the dark brief banner with its call-to-action button.
+   ============================================================================= */
+
+.brief-banner{background:var(--ink); color:#fff; border-radius:18px; padding:40px; text-align:center;}
+.brief-banner p{max-width:640px; margin:0 auto 22px; color:#cbd2dc; font-size:15.5px; font-style:italic;}

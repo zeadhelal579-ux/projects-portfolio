@@ -1,0 +1,18 @@
+/* =============================================================================
+   File: footer.css
+   Purpose: Site footer: brand, contact lines, supporters chips and the closing line.
+   ============================================================================= */
+
+.footer{padding:64px 0 40px; border-top:1px solid var(--border); margin-top:64px;}
+.footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:36px;}
+.footer-brand{display:flex; align-items:center; gap:10px; margin-bottom:14px;}
+.footer-brand img{height:30px; border-radius:6px;}
+.footer h5{font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:14px;}
+.footer-item{font-size:14px; margin-bottom:10px;}
+.footer-item a{text-decoration:none;}
+.footer-item a:hover{color:var(--emerald);}
+.supporters{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
+.supporters span{font-size:12px; padding:6px 11px; border:1px solid var(--border); border-radius:100px; color:var(--ink-soft);}
+.closing{margin-top:44px; padding-top:28px; border-top:1px solid var(--border); text-align:center;}
+.closing p{font-style:italic; color:var(--ink-soft); font-size:14.5px;}
+.closing .ar{display:block; margin-top:6px; font-size:15px; color:var(--ink);}

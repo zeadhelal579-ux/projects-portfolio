@@ -1,0 +1,17 @@
+/* =============================================================================
+   File: buttons.css
+   Purpose: Shared .btn component and its variants (.btn-primary, .btn-outline, .btn-sm).
+   ============================================================================= */
+
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  font-family:var(--font-body); font-weight:700; font-size:14.5px;
+  padding:11px 20px; border-radius:10px; text-decoration:none; cursor:pointer;
+  border:1.5px solid transparent; transition:transform .12s, box-shadow .12s, background .15s;
+}
+.btn:active{transform:translateY(1px);}
+.btn-primary{background:var(--emerald); color:#fff;}
+.btn-primary:hover{background:var(--emerald-ink);}
+.btn-outline{background:transparent; border-color:var(--ink); color:var(--ink);}
+.btn-outline:hover{background:var(--ink); color:#fff;}
+.btn-sm{padding:8px 14px; font-size:13.5px;}

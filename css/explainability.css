@@ -1,0 +1,17 @@
+/* =============================================================================
+   File: explainability.css
+   Purpose: Explainability section (#explainability): the SHAP card with its signed bars.
+   ============================================================================= */
+
+.shap-card{border:1px solid var(--border); border-radius:var(--radius); padding:30px; max-width:760px;}
+.shap-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:10px;}
+.shap-id{font-family:var(--font-display); font-weight:800; font-size:17px;}
+.pill-warn{background:var(--amber-soft); color:var(--amber); font-weight:700; font-size:12.5px; padding:5px 12px; border-radius:100px;}
+.shap-row{display:grid; grid-template-columns:190px 1fr 60px; align-items:center; gap:14px; margin-bottom:16px; font-size:14px;}
+.shap-track{position:relative; height:12px; background:var(--border); border-radius:6px;}
+.shap-fill{position:absolute; top:0; height:100%; border-radius:6px;}
+.shap-fill.pos{background:var(--emerald); left:50%;}
+.shap-fill.neg{background:var(--amber); right:50%;}
+.shap-val{font-weight:700; font-variant-numeric:tabular-nums;}
+.shap-clinical{margin-top:20px; padding:16px 18px; background:var(--bg-chalk); border-radius:10px; font-size:14px; color:var(--ink-soft);}
+.shap-clinical b{color:var(--ink);}

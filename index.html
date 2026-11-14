@@ -1,0 +1,554 @@
+<!-- Raa'i — project portfolio. Static site: index.html + css/ + js/ + assets/. No build step. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raa'i — Smart Infrastructure for National Livestock Security</title>
+<meta name="description" content="Raa'i (راعي) turns standard farm CCTV into a 24/7 offline edge-AI veterinary system — detecting sub-clinical livestock disease before visual symptoms appear.">
+<link rel="icon" href="assets/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<!-- One <link> per section, in page order. base.css first (variables + reset),
+     responsive.css after all section files so its media queries win the cascade. -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/awards.css">
+<link rel="stylesheet" href="css/challenge.css">
+<link rel="stylesheet" href="css/solution.css">
+<link rel="stylesheet" href="css/science.css">
+<link rel="stylesheet" href="css/explainability.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/screens.css">
+<link rel="stylesheet" href="css/business.css">
+<link rel="stylesheet" href="css/stack.css">
+<link rel="stylesheet" href="css/team.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/reduced-motion.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="brand">
+      <img src="assets/images/logo.png" alt="Raa'i logo mark">
+      <span class="brand-name">Raa'i <span class="ar" dir="rtl" lang="ar">راعي</span></span>
+    </a>
+    <nav class="links" id="main-nav" aria-label="Primary">
+      <a href="#challenge">Challenge</a>
+      <a href="#solution">Solution</a>
+      <a href="#science">Science</a>
+      <a href="#product">Product</a>
+      <a href="#screens">Workflows</a>
+      <a href="#business">Business</a>
+      <a href="#stack">Stack</a>
+      <a href="#team">Team</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-outline btn-sm">Get in touch</a>
+      <button type="button" class="burger" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="hero-tag">DeepTech × AgriTech × Climate AI</span>
+      <h1>Livestock monitoring from the cameras farms already own.</h1>
+      <p class="hero-sub">Raa'i (راعي) turns the CCTV cameras a farm already owns into a 24/7 non-invasive virtual veterinarian. Processing 100% offline at the edge, Raa'i detects sub-clinical disease days before visual symptoms appear — protecting food security and cutting agricultural methane.</p>
+      <div class="hero-ctas">
+        <a href="https://raa-i-ai-livestock-care.vercel.app" target="_blank" rel="noopener" class="btn btn-primary">View live prototype</a>
+        <button class="btn btn-outline" data-modal-open="briefModal">Request technical brief &amp; deck</button>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="assets/images/logo.png" alt="" width="151" height="120">
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="kpi-row">
+      <div class="kpi-card kpi-e"><div class="num">55%</div><div class="lbl">National herd decline Raa'i targets to reverse — 18.6M → 8.1M heads (CAPMAS, 2015–2024)</div></div>
+      <div class="kpi-card kpi-s"><div class="num">&lt;60ms</div><div class="lbl">Target sovereign edge latency — 100% offline processing, zero cloud dependency</div></div>
+      <div class="kpi-card kpi-a"><div class="num">84%</div><div class="lbl">Re-ID memory footprint saved via TurboQuant compression (1,032B → 165B/vector)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section class="tight" id="awards">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Proven track record</div>
+      <h2 class="h2">Hackathons and competition results</h2>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card"><div class="award-rank rank-1">1st</div><h4>ICEALEX Innovation &amp; AgriTech Competition</h4><p>Overall competition winner.</p></div>
+      <div class="award-card"><div class="award-rank rank-1">1st</div><h4>Damietta University AI Hackathon 2026</h4><p>Agriculture track — outperformed 37 teams.</p></div>
+      <div class="award-card"><div class="award-rank rank-2">2nd</div><h4>Egypt Cities Hackathon</h4><p>Suez Canal University.</p></div>
+      <div class="award-card"><div class="award-rank rank-2">2nd</div><h4>Tanta University Healthcare &amp; Innovation Forum 2026</h4><p>Runner-up.</p></div>
+      <div class="award-card"><div class="award-rank rank-3">3rd</div><h4>Damanhour University Smart Systems Competition</h4><p>National competition, third place.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ CHALLENGE ============ -->
+<section id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Why it matters</div>
+      <h2 class="h2">When a livestock asset dies in silence, a family loses its savings — and the planet inherits an unrecorded methane disaster</h2>
+    </div>
+
+    <div class="stat-grid4">
+      <div class="stat-card"><div class="big">55%</div><div class="desc">Egypt's national herd fell from 18.6M (2015) to 8.1M heads (2024) — CAPMAS Livestock Census.</div></div>
+      <div class="stat-card alt"><div class="big">28×</div><div class="desc">Methane (CH₄) from decomposing carcasses traps heat 28× more effectively than CO₂ — IPCC / EPA. The 2012 FMD epidemic alone (8,355 calf deaths) released an estimated 137,857 m³ of methane, ≈3.86M kg CO₂e.</div></div>
+      <div class="stat-card warn"><div class="big">60%+</div><div class="desc">Of emerging infectious diseases in humans originate in animals — brucellosis, zoonotic TB and avian influenza all cross from livestock (WHO / FAO / WOAH).</div></div>
+      <div class="stat-card"><div class="big">$927M</div><div class="desc">Egypt's 2024 imports of frozen boneless bovine meat (152K tonnes) — against 40% food inflation in April 2024 (UN Comtrade, World Bank WITS, CAPMAS).</div></div>
+    </div>
+
+    <div class="split-2">
+      <div class="info-card">
+        <h4>Economic deficit</h4>
+        <p>Traditional veterinary care is reactive. Symptoms surface too late, forcing emergency culling instead of early treatment — and the gap costs Egypt $1B+ a year in meat imports, hitting smallholder farmers hardest.</p>
+      </div>
+      <div class="info-card">
+        <h4>Hardware failure</h4>
+        <p>Wearable plastic tags and collars cost $70–$300+ per head (&gt;1.4M EGP per 100 heads), get chewed apart, create toxic e-waste, and depend on rural 5G/cloud bandwidth that mostly doesn't exist.</p>
+      </div>
+    </div>
+
+    <div class="table-scroll">
+      <table class="compare">
+        <thead><tr><th></th><th>Raa'i</th><th>Smart collars</th><th>Cloud platforms</th></tr></thead>
+        <tbody>
+          <tr><td>Cost</td><td class="win">Zero cloud fees</td><td>$70–$300+ /head</td><td>Recurring fees</td></tr>
+          <tr><td>Infrastructure</td><td class="win">100% offline</td><td>Needs connectivity</td><td>Needs connectivity</td></tr>
+          <tr><td>Animal welfare</td><td class="win">Fully non-invasive</td><td>Physical tagging</td><td>Varies</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="src-note">Sources: CAPMAS Official Livestock Census (2015–2024) · Ministry of Agriculture &amp; General Organization for Veterinary Services, Egypt · ScienceDirect biological methane decay models · IPCC · US EPA · WHO · FAO · WOAH · UN Comtrade · World Bank WITS · MCIT Egypt (rural connectivity indicators) · Global AgTech Market Reports.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ SOLUTION ============ -->
+<section id="solution">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The pipeline</div>
+      <h2 class="h2">Turning cameras farms already own into a 24/7 veterinary system</h2>
+      <p class="lede">A non-invasive, fully offline AI pipeline built for real farms — not a black box.</p>
+    </div>
+
+    <div class="pipeline-grid">
+      <div class="pipe-card"><div class="pipe-num">01</div><h4>Stream ingestion &amp; detection</h4><p>Ingests standard RTSP camera feeds completely offline. YOLOv8 detects animals and YOLOv8-Pose extracts 17 quadruped skeletal keypoints in real time.</p></div>
+      <div class="pipe-card"><div class="pipe-num">02</div><h4>Biometric muzzle re-ID</h4><p>Extracts a 258-dimensional multi-modal visual fingerprint (colour histograms + Hu/Zernike moments). Re-identifies individual animals across camera blind spots with zero ear-tags.</p></div>
+      <div class="pipe-card"><div class="pipe-num">03</div><h4>Spatio-temporal behavioural heuristics</h4><p>Computes nose-to-feet geometric feeding ratios, speed variance (σ²ᵥ) for early lameness, and pseudo-3D spatial depth projections.</p></div>
+      <div class="pipe-card"><div class="pipe-num">04</div><h4>Native Raa'i-Net &amp; local alerts</h4><p>Passes sequence vectors into Raa'i-Net (1D GRU) to classify sub-clinical risk in &lt;0.8ms, generating immediate Arabic alerts and local veterinary reports.</p></div>
+    </div>
+
+    <p class="src-note">Sources: Raa'i technical architecture specifications · edge computing benchmarks.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ SCIENCE ============ -->
+<section id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The science</div>
+      <h2 class="h2">Built on a proprietary local dataset and benchmarked hardware, not a hunch</h2>
+    </div>
+
+    <div class="tabs">
+      <input type="radio" name="scitab" id="tab1" checked>
+      <input type="radio" name="scitab" id="tab2">
+      <div class="tab-labels">
+        <label for="tab1">The data</label>
+        <label for="tab2">The model &amp; benchmarks</label>
+      </div>
+      <div class="tab-content">
+        <div class="tab-panel panel-1">
+          <div class="data-grid">
+            <div>
+              <p style="color:var(--ink-soft); font-size:14.5px;">A raw corpus of <b>53,000 images</b> was filtered down to <b>11,000 high-quality, annotated local images</b>, plus <b>12,000 bovine weight-photogrammetry samples</b> used to train the weight-estimation pipeline.</p>
+              <div class="bignum-row">
+                <div class="bignum">53,000<span>raw images collected</span></div>
+                <div class="bignum">11,000<span>annotated, high-quality images</span></div>
+                <div class="bignum">12,000<span>weight photogrammetry samples</span></div>
+              </div>
+            </div>
+            <div>
+              <p style="color:var(--ink-soft); font-size:14.5px; margin-bottom:4px;">Behaviour class balance across the annotated set:</p>
+              <div class="bar-list">
+                <div class="bar-row"><span>Standing</span><div class="bar-track"><div class="bar-fill" style="width:42%"></div></div><span>42%</span></div>
+                <div class="bar-row"><span>Lying / ruminating</span><div class="bar-track"><div class="bar-fill" style="width:28%"></div></div><span>28%</span></div>
+                <div class="bar-row"><span>Standing / eating</span><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><span>20%</span></div>
+                <div class="bar-row"><span>Walking / claudication</span><div class="bar-track"><div class="bar-fill" style="width:10%"></div></div><span>10%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel panel-2">
+          <p style="color:var(--ink-soft); font-size:14.5px; max-width:760px;">Six architecture configurations were compared before committing to production: a monolithic CPU baseline, a TensorRT GPU setup, and a native C++ engine under high-density stress. The winning stack — <b>YOLOv8n-pose + BoT-SORT tracker + Raa'i-Net GRU + TurboQuant ReID</b> — is what ships today.</p>
+          <div class="table-scroll">
+            <table class="bench">
+              <thead><tr><th>Metric</th><th>Legacy CPU baseline</th><th>Optimized GPU setup</th><th>High-density stress (13+ cows)</th></tr></thead>
+              <tbody>
+                <tr><td>System throughput</td><td>2.72 FPS</td><td class="best">8.24 FPS</td><td class="best">5.14 FPS</td></tr>
+                <tr><td>Mean latency</td><td>602.62 ms</td><td class="best">215.20 ms</td><td class="best">264.64 ms</td></tr>
+                <tr><td>Inference (t_inf)</td><td>91.83 ms</td><td class="best">79.16 ms</td><td class="best">92.62 ms</td></tr>
+                <tr><td>Post-processing (t_post)</td><td>505.48 ms</td><td class="best">135.20 ms</td><td class="best">171.43 ms</td></tr>
+                <tr><td>Peak CPU load</td><td>1108.80%</td><td class="best">503.20%</td><td class="best">433.10%</td></tr>
+                <tr><td>ReID memory / vector</td><td>1,032 bytes</td><td class="best">165 bytes (TurboQuant)</td><td class="best">165 bytes</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:28px; font-size:13.5px; color:var(--ink-soft);">Live prototype telemetry — a fully operational offline build, benchmarked in the field:</p>
+          <div class="proto-strip">
+            <div class="proto-chip"><div class="n">&lt;420ms</div><div class="l">Latency per frame</div></div>
+            <div class="proto-chip"><div class="n">&gt;4 FPS</div><div class="l">Processing throughput</div></div>
+            <div class="proto-chip"><div class="n">&gt;85%</div><div class="l">mAP detection accuracy</div></div>
+            <div class="proto-chip"><div class="n">~1.5GB</div><div class="l">RAM footprint (peak 1,286MB)</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="src-note">Sources: Raa'i hardware benchmarking logs · performance telemetry reports · edge computing benchmarks.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ EXPLAINABILITY ============ -->
+<section id="explainability">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Explainability</div>
+      <h2 class="h2">Every prediction ships with its reasons — no black-box opacity</h2>
+    </div>
+    <div class="shap-card">
+      <div class="shap-head">
+        <div class="shap-id">Subject ID #R001 — Lameness warning</div>
+        <span class="pill-warn">Moderate → High risk</span>
+      </div>
+      <div class="shap-row">
+        <span>Speed variance (σ²ᵥ)</span>
+        <div class="shap-track"><div class="shap-fill pos" style="width:21%"></div></div>
+        <span class="shap-val" style="color:var(--emerald)">+0.42</span>
+      </div>
+      <div class="shap-row">
+        <span>Nose-to-feet depth ratio</span>
+        <div class="shap-track"><div class="shap-fill neg" style="width:9%"></div></div>
+        <span class="shap-val" style="color:var(--amber)">-0.18</span>
+      </div>
+      <div class="shap-row">
+        <span>Lying duration</span>
+        <div class="shap-track"><div class="shap-fill pos" style="width:12.5%"></div></div>
+        <span class="shap-val" style="color:var(--emerald)">+0.25</span>
+      </div>
+      <div class="shap-clinical"><b>Clinical output:</b> High correlation with early-stage claudication (hoof inflammation) — high step asymmetry over an 8-frame window, eating duration down 38% over 24h, resting phase 2.4h beyond baseline. Recommended inspection: right hind leg.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ PRODUCT ============ -->
+<section id="product">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Product</div>
+      <h2 class="h2">From model to workspace — a dashboard built for the farm floor</h2>
+    </div>
+    <div class="dash-card">
+      <div class="dash-top"><h4>Farm overview</h4><span class="dash-live">● Live · 100% offline edge mode</span></div>
+      <div class="dash-kpis">
+        <div><div class="n">124</div><div class="l">Heads actively monitored</div></div>
+        <div><div class="n">100%</div><div class="l">Offline edge mode uptime</div></div>
+        <div><div class="n">3</div><div class="l">High-risk alerts today</div></div>
+      </div>
+      <div class="risk-bar"><div></div><div></div><div></div></div>
+      <div class="risk-legend"><span class="rl-1">88% Low risk (healthy)</span><span class="rl-2">9% Moderate (feeding drop)</span><span class="rl-3">3% High (lameness / fever)</span></div>
+    </div>
+
+    <div class="persona-grid">
+      <div class="persona-card"><h4>Smallholder farmers</h4><p>Protection against asset-destroying epidemics without buying expensive tags.</p></div>
+      <div class="persona-card"><h4>Commercial dairy &amp; fattening farms</h4><p>24/7 automated monitoring, weight tracking and yield optimisation.</p></div>
+      <div class="persona-card"><h4>Veterinarians &amp; health inspectors</h4><p>Automated Arabic diagnostic reports and historical behavioural timelines.</p></div>
+      <div class="persona-card"><h4>Agri-investors &amp; insurance co-ops</h4><p>Verifiable asset security, mortality risk underwriting and carbon-credit data.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ SCREENS ============ -->
+<section id="screens">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Inside the prototype</div>
+      <h2 class="h2">Workflows in the prototype</h2>
+      <p class="lede">Explore what farm teams can do with the prototype.</p>
+    </div>
+    <div class="screen-grid">
+      <div class="screen-card">
+        <div class="screen-body">
+          <h4>Live edge-AI tracking &amp; on-device Arabic veterinary report</h4>
+          <p>Real-time detection with bounding boxes and skeletal pose lines, running on cuda:0, paired with an automated Arabic-language clinical report generated locally on the same device.</p>
+        </div>
+      </div>
+      <div class="screen-card">
+        <div class="screen-body">
+          <h4>Live weight estimation &amp; pose tracking</h4>
+          <p>Bodyweight estimated in real time (176.8kg) from pseudo-3D depth (2.57m), with full-body pose keypoints and automatic posture classification — output directly from the running prototype.</p>
+        </div>
+      </div>
+      <div class="screen-card">
+        <div class="screen-body">
+          <h4>Human-in-the-loop active learning interface</h4>
+          <p>Farm-staff label-override tool with 20% spatial-padding crop, used to fine-tune the background model on local footage.</p>
+        </div>
+      </div>
+      <div class="screen-card">
+        <div class="screen-body">
+          <h4>3D spatial trajectory &amp; density map</h4>
+          <p>Pseudo-3D coordinate projection mapping barn-floor utilisation and individual movement trajectories over 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ BUSINESS ============ -->
+<section id="business">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Business &amp; commercial strategy</div>
+      <h2 class="h2">A high-margin hardware + software revenue model</h2>
+    </div>
+
+    <div class="bmc-grid">
+      <div class="bmc-box bmc-partners"><h5>Key partners</h5><ul><li>Suez University FCI</li><li>Suez Canal University (academic protocol)</li><li>ICEALEX</li><li>PLAN International</li><li>Local farm cooperatives</li><li>Ministry of Agriculture</li></ul></div>
+      <div class="bmc-box bmc-activities"><h5>Key activities</h5><ul><li>Edge-AI computer vision development</li><li>C++ hardware acceleration</li><li>Active-learning dataset curation</li></ul></div>
+      <div class="bmc-box bmc-resources"><h5>Key resources</h5><ul><li>Proprietary 11K annotated local image corpus</li><li>Raa'i-Net GRU weights</li><li>TurboQuant ReID algorithms</li></ul></div>
+      <div class="bmc-box bmc-value"><h5>Value propositions</h5><ul><li>100% offline edge operation</li><li>Zero physical tags / collars</li><li>&lt;60ms target latency</li><li>Instant Arabic alerts</li><li>100% ROI upon saving one cow</li></ul></div>
+      <div class="bmc-box bmc-relations"><h5>Customer relationships</h5><ul><li>Direct installation</li><li>Automated local model updates</li></ul></div>
+      <div class="bmc-box bmc-channels"><h5>Channels</h5><ul><li>Direct B2B farm sales</li><li>Agricultural co-op partnerships</li><li>HaaS hardware bundling</li></ul></div>
+      <div class="bmc-box bmc-segments"><h5>Customer segments</h5><ul><li>Commercial dairy &amp; fattening farms (50+ heads)</li><li>Smallholder farm cooperatives</li><li>Livestock insurers</li></ul></div>
+      <div class="bmc-box bmc-cost"><h5>Cost structure</h5><ul><li>Edge hardware sourcing (NVIDIA Jetson / local PCs)</li><li>Installation</li><li>R&amp;D dataset annotation</li></ul></div>
+      <div class="bmc-box bmc-revenue"><h5>Revenue streams</h5><ul><li>HaaS setup fees</li><li>SaaS subscriptions</li><li>Enterprise data &amp; analytics</li></ul></div>
+    </div>
+
+    <div class="rev-grid">
+      <div class="rev-card"><span class="stream-tag">Stream 01</span><h4>Hardware-as-a-Service (HaaS)</h4><p>One-time installation of cameras, wiring and the Raa'i edge processing unit. A standard 50-head farm setup costs ~140,000 EGP and sells for ~200,000 EGP — a 30% net margin.</p></div>
+      <div class="rev-card"><span class="stream-tag">Stream 02</span><h4>SaaS subscription</h4><p>Monthly or annual subscription per head monitored (50–100 EGP / head / month), unlocking live analytics, mobile alerts and model updates.</p></div>
+      <div class="rev-card"><span class="stream-tag">Stream 03</span><h4>Enterprise data &amp; underwriting</h4><p>Anonymised herd-density and health-risk data API for livestock insurance underwriters and national food-security agencies.</p></div>
+    </div>
+    <div class="metric-strip">
+      <div class="metric-chip"><div class="n">30%</div><div class="l">Hardware margin</div></div>
+      <div class="metric-chip"><div class="n">&lt;3 months</div><div class="l">Target ROI</div></div>
+      <div class="metric-chip"><div class="n">Near-zero</div><div class="l">Cloud costs</div></div>
+    </div>
+    <p class="src-note">One breeding cow is worth 90,000–120,000 EGP, so preventing a single loss can cover a year of platform costs. Sources: Raa'i business plan &amp; BMC · financial viability analysis · CAPMAS livestock valuation.</p>
+
+    <div style="margin-top:56px;">
+      <h4 style="font-size:18px; font-weight:700; margin-bottom:6px;">Market sizing</h4>
+      <p style="color:var(--ink-soft); font-size:14.5px;">How big is the opportunity in Egypt alone?</p>
+      <div class="tam-grid">
+        <div class="tam-card"><div class="n">$1.2B</div><div class="l">TAM — MENA &amp; East Africa livestock monitoring market</div></div>
+        <div class="tam-card"><div class="n">$180M</div><div class="l">SAM — Egyptian commercial &amp; co-op cattle sector, 8.1M heads</div></div>
+        <div class="tam-card"><div class="n">$15M</div><div class="l">SOM — 500+ commercial farms / 50,000 heads over 24 months</div></div>
+      </div>
+      <p class="src-note">Cross-referenced against Egypt's underlying 8.1–8.6M head cattle &amp; buffalo population and a $1B annual meat-import bill the platform helps close. Sources: Raa'i market sizing analysis · CAPMAS · Global AgTech Market Reports.</p>
+    </div>
+
+    <div style="margin-top:56px;">
+      <h4 style="font-size:18px; font-weight:700; margin-bottom:16px;">Go-to-market timeline</h4>
+      <div class="timeline">
+        <div class="tl-card"><div class="tl-period">Months 0–12 · Phase 1</div><h4>Data moat &amp; C++ engine</h4><p>10 free pilot farms refine the YOLOv8 models toward &gt;95% accuracy; local edge AI and Arabic reporting ship by month 2, &lt;60ms latency optimisation by month 3, commercial launch and weight estimation by month 9.</p></div>
+        <div class="tl-card"><div class="tl-period">Months 12–24 · Phase 2</div><h4>Commercial launch &amp; app</h4><p>Paid subscriptions roll out across 500+ commercial farms (~6,000 subscriptions); a lightweight Raa'i-Net mobile app ships alongside the native C++/WinUI 3 client.</p></div>
+        <div class="tl-card"><div class="tl-period">Regional export · Phase 3</div><h4>Multi-species &amp; regional expansion</h4><p>Heuristics extend to sheep, goats and poultry; export to Saudi Arabia, the UAE, Sudan and wider Sub-Saharan Africa.</p></div>
+      </div>
+    </div>
+
+    <div style="margin-top:56px;">
+      <h4 style="font-size:18px; font-weight:700; margin-bottom:6px;">Academic partnership</h4>
+      <p style="color:var(--ink-soft); font-size:14.5px;">A cooperation protocol is being formalised with Suez Canal University to leverage its academic resources for real-world deployment and medical validation.</p>
+      <div class="partner-3">
+        <div class="partner-card"><div class="ic">1</div><h4>Live farm integration</h4><p>Real-world testing and validation on working farms.</p></div>
+        <div class="partner-card"><div class="ic">2</div><h4>Veterinary expertise</h4><p>Veterinary input to validate data and improve the AI models.</p></div>
+        <div class="partner-card"><div class="ic">3</div><h4>Strategic choice</h4><p>Access to strong agricultural and veterinary resources.</p></div>
+      </div>
+    </div>
+
+    <div style="margin-top:56px;">
+      <h4 style="font-size:18px; font-weight:700; margin-bottom:16px;">Impact &amp; sustainability alignment</h4>
+      <div class="impact-3">
+        <div class="impact-card"><div class="impact-num">1</div><h4>Environmental</h4><p>Prevents methane emissions from carcass decomposition.</p><p>Zero cloud energy footprint through on-farm computing.</p></div>
+        <div class="impact-card"><div class="impact-num">2</div><h4>Economic</h4><p>Protects livestock assets and narrows Egypt's meat-import gap.</p><p>Supports local supply and future exports.</p></div>
+        <div class="impact-card"><div class="impact-num">3</div><h4>Social</h4><p>Protects smallholder and commercial farmers' livelihoods.</p><p>Strengthens food security and rural stability.</p></div>
+      </div>
+      <p style="margin-top:24px; font-size:13.5px; color:var(--ink-soft);">Raa'i directly advances seven UN Sustainable Development Goals:</p>
+      <div class="sdg-row">
+        <div class="sdg-chip"><div class="sq" style="background:#E5243B"><b>1</b><small>No poverty</small></div></div>
+        <div class="sdg-chip"><div class="sq" style="background:#DDA63A"><b>2</b><small>Zero hunger</small></div></div>
+        <div class="sdg-chip"><div class="sq" style="background:#4C9F38"><b>3</b><small>Good health</small></div></div>
+        <div class="sdg-chip"><div class="sq" style="background:#A21942"><b>8</b><small>Decent work</small></div></div>
+        <div class="sdg-chip"><div class="sq" style="background:#FD6925"><b>9</b><small>Industry &amp; innovation</small></div></div>
+        <div class="sdg-chip"><div class="sq" style="background:#BF8B2E"><b>12</b><small>Responsible consumption</small></div></div>
+        <div class="sdg-chip"><div class="sq" style="background:#3F7E44"><b>13</b><small>Climate action</small></div></div>
+      </div>
+      <p class="src-note">Sources: UN SDGs framework · IPCC climate reports · Ministry of Agriculture reports.</p>
+    </div>
+
+    <div class="ask-card">
+      <div>
+        <h3 style="color:#fff; font-size:20px; margin-bottom:10px;">What we're looking for</h3>
+        <ul>
+          <li>Seed funding + incubation support to scale pilot deployments</li>
+          <li>Funds for GPUs and CCTV hardware for free pilot farms</li>
+          <li>Path to a profitable SaaS model within 7 months</li>
+        </ul>
+      </div>
+      <div class="ask-goal"><div class="n">Month 7</div><div class="l">Target: &gt;95% accuracy + a profitable SaaS model</div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ STACK ============ -->
+<section id="stack">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Under the hood</div>
+      <h2 class="h2">The stack, end to end</h2>
+    </div>
+    <div class="stack-cat"><h4>Frontend / client</h4><div class="tag-row"><span class="tag">React.js</span><span class="tag">Tailwind CSS</span><span class="tag">WinUI 3 (.NET 8 C#)</span><span class="tag">HTML5 Canvas</span></div></div>
+    <div class="stack-cat"><h4>Backend core</h4><div class="tag-row"><span class="tag">FastAPI (Python)</span><span class="tag">C++20 native engine</span><span class="tag">ONNX Runtime C++</span><span class="tag">OpenCV</span></div></div>
+    <div class="stack-cat"><h4>Data layer</h4><div class="tag-row"><span class="tag">SQLite (AES-GCM encrypted)</span><span class="tag">SQLAlchemy</span><span class="tag">IndexedDB (offline fallback)</span></div></div>
+    <div class="stack-cat"><h4>AI / ML pipelines</h4><div class="tag-row"><span class="tag">PyTorch</span><span class="tag">YOLOv8-Pose</span><span class="tag">BoT-SORT tracker</span><span class="tag">Raa'i-Net (1D GRU)</span><span class="tag">Google TurboQuant</span></div></div>
+    <div class="stack-cat"><h4>Hardware &amp; external</h4><div class="tag-row"><span class="tag">NVIDIA CUDA / TensorRT</span><span class="tag">IP RTSP cameras</span><span class="tag">WireGuard VPN</span></div></div>
+    <div class="stack-cat"><h4>Security &amp; quality</h4><div class="tag-row"><span class="tag">JWT (HS256)</span><span class="tag">Prepared statements (SQLi defense)</span><span class="tag">TLS 1.3 mTLS</span></div></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ TEAM ============ -->
+<section id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Team Cow Boy — Suez University FCI</div>
+      <h2 class="h2">A hands-on technical team that built and shipped the prototype together</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="avatar" style="background:var(--emerald)">FI</div>
+        <h4>Al-Farouk Ibrahim Bashir</h4>
+        <div class="role">CEO &amp; AI System Architect</div>
+        <p>Engineered the YOLOv8-Pose models, cleaned the raw 53K-image dataset down to 11K, and designed the Raa'i-Net GRU architecture.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--steel)">ZA</div>
+        <h4>Zead Abdelkader Mohamed</h4>
+        <div class="role">COO &amp; Frontend / Mobile App Developer</div>
+        <p>Built the React dashboard UI, real-time video canvas overlays, and integrated browser speech/audio APIs.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--amber)">MR</div>
+        <h4>Mahmoud Rageh Ibrahim</h4>
+        <div class="role">CTO &amp; Backend / Cybersecurity Lead</div>
+        <p>Designed the FastAPI backend, SQLite encrypted schemas and WireGuard VPN tunnels, and audited against SQLi/MITM attacks.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:#4B5563">AE</div>
+        <h4>Ahmed Emad Ahmed</h4>
+        <div class="role">CTO Vice &amp; Backend / Integration Developer</div>
+        <p>Wrote the core multi-model integration scripts, latency benchmarks, and the C++ binding bridges.</p>
+      </div>
+    </div>
+    <div class="team-note"><b>Key highlight:</b> 4 engineers covering AI, backend, frontend and ML — one hackathon-winning working prototype.</div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="brief-banner">
+      <h3 style="color:#fff; font-size:22px; margin-bottom:14px;">Interested in our financial underwriting model, C++ benchmarking logs, or security audit reports?</h3>
+      <p>Request the full technical underwriting brief — covering benchmarks, dataset methodology and business financials in detail.</p>
+      <button class="btn btn-primary" data-modal-open="briefModal">Download technical underwriting brief</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Raa'i logo mark">
+          <span class="brand-name">Raa'i</span>
+        </div>
+        <p style="color:var(--ink-soft); font-size:14px; max-width:320px;">A smart eye that cares, and sustainable technology that protects.</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <div class="footer-item"><a href="mailto:alfarwqabrahym116@gmail.com">alfarwqabrahym116@gmail.com</a></div>
+        <div class="footer-item"><a href="tel:+201019814499">+20 101 981 4499</a></div>
+        <div class="footer-item">Suez, Egypt — Faculty of Computers &amp; Information, Suez University</div>
+        <div class="footer-item"><a href="https://raa-i-ai-livestock-care.vercel.app" target="_blank" rel="noopener">Open the live prototype</a></div>
+      </div>
+      <div>
+        <h5>Incubators &amp; supporters</h5>
+        <div class="supporters">
+          <span>Suez University</span><span>Suez Canal University</span><span>ICEALEX</span><span>PLAN International</span><span>Denmark-Arab Partnership Programme</span>
+        </div>
+      </div>
+    </div>
+    <div class="closing">
+      <p>Raa'i (راعي) — A smart eye that cares, and sustainable technology that protects.<span class="ar" dir="rtl" lang="ar">راعي</span></p>
+    </div>
+  </div>
+</footer>
+
+<dialog id="briefModal" aria-labelledby="brief-title">
+  <div class="modal-body">
+    <button class="modal-close" data-modal-close="briefModal" aria-label="Close">&times;</button>
+    <h3 id="brief-title">Request the Raa'i technical brief</h3>
+    <p>Send a request and the team will share the full underwriting brief — benchmarks, dataset methodology, security audit and financial model.</p>
+    <a class="btn btn-primary" style="width:100%;" href="mailto:alfarwqabrahym116@gmail.com?subject=Requesting%20the%20Raa'i%20Technical%20Underwriting%20Brief&amp;body=Hi%20Raa'i%20team%2C%0A%0AI'd%20like%20to%20request%20the%20full%20technical%20underwriting%20brief%20and%20deck.%0A%0AThanks">Email the team</a>
+  </div>
+</dialog>
+
+<script src="js/navigation.js" defer></script>
+<script src="js/brief-dialog.js" defer></script>
+
+</body>
+</html>
