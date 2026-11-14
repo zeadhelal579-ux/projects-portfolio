@@ -1,0 +1,25 @@
+/* =============================================================================
+   File: nav.css
+   Purpose: Sticky site header: logo, link list, 'Get in touch' button and the mobile menu button (.nav-toggle). Markup: <header class="site-header"> in index.html.
+   ============================================================================= */
+
+.site-header{
+  position:sticky; top:0; z-index:100;
+  background:rgba(10,21,9,0.88); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line-soft);
+}
+.header-inner{ display:flex; align-items:center; justify-content:space-between; height:72px; gap:24px; }
+.brand{ display:flex; align-items:center; gap:.55em; text-decoration:none; }
+.brand img{ height:42px; width:auto; display:block; }
+.main-nav{ display:flex; gap:28px; flex:1; justify-content:center; }
+.main-nav a{
+  text-decoration:none; color:var(--ink-dim); font-size:.92rem; font-weight:600;
+  padding:6px 2px; border-bottom:2px solid transparent; transition:color .15s ease, border-color .15s ease;
+}
+.main-nav a:hover, .main-nav a[aria-current="location"]{ color:var(--ink); border-color:var(--accent); }
+.header-actions{ display:flex; align-items:center; gap:14px; }
+.nav-toggle{
+  display:none; flex-direction:column; justify-content:center; gap:5px;
+  width:38px; height:38px; background:transparent; border:1px solid var(--line); border-radius:8px; cursor:pointer;
+}
+.nav-toggle span{ display:block; height:2px; width:18px; margin:0 auto; background:var(--ink); }

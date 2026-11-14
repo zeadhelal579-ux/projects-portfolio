@@ -1,0 +1,503 @@
+<!-- CROP — project portfolio. Static site: index.html + css/ + js/ + assets/. No build step. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CROP — Control and Radical Outbreak Protection</title>
+<meta name="description" content="CROP is an AI early-warning system that forecasts crop-pest outbreaks days before they happen, using growing-degree-day thermal modeling instead of calendar-based spraying.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&amp;family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- One <link> per section, in page order. base.css first (variables + reset),
+     responsive.css after all section files so its media queries win the cascade. -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/challenge.css">
+<link rel="stylesheet" href="css/solution.css">
+<link rel="stylesheet" href="css/science.css">
+<link rel="stylesheet" href="css/transparency.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/screens.css">
+<link rel="stylesheet" href="css/business.css">
+<link rel="stylesheet" href="css/stack.css">
+<link rel="stylesheet" href="css/team.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/reduced-motion.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <img src="assets/images/logo.png" alt="CROP — Control and Radical Outbreak Protection" width="92" height="42">
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <a href="#challenge">Challenge</a>
+      <a href="#solution">Solution</a>
+      <a href="#science">Science</a>
+      <a href="#product">Product</a>
+      <a href="#screens">Screens</a>
+      <a href="#business">Business</a>
+      <a href="#stack">Stack</a>
+      <a href="#team">Team</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" href="#contact">Get in touch</a>
+      <button class="nav-toggle" id="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+      <p class="eyebrow">AgriTech · Predictive Pest Intelligence</p>
+      <h1 class="hero-title">Forecast pest risk before crop damage.</h1>
+      <p class="hero-sub">CROP is an early-warning system for three of the costliest pests in Egyptian agriculture. It turns daily temperature into a biological clock, forecasts an outbreak up to seven days out, and tells a grower exactly when — and how — to act, before a leaf is lost.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#screens">Explore the screens</a>
+        <a class="btn btn-ghost" href="#solution">See how it works</a>
+      </div>
+
+      </div>
+      <figure class="hero-preview">
+        <a href="#screens"><img src="assets/images/screens/dashboard.webp" alt="CROP dashboard with field weather and the seven-day pest risk forecast" width="1280" height="1078" decoding="async" fetchpriority="high"></a>
+        <figcaption>CROP dashboard · seven-day risk forecast</figcaption>
+      </figure>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Target pest species tracked</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">7&nbsp;days</span>
+          <span class="stat-label">Forecast horizon before outbreak</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">280,512</span>
+          <span class="stat-label">Field-weather records the model trains on</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHALLENGE ============ -->
+  <section class="section" id="challenge">
+    <div class="wrap section-grid">
+      <div class="section-head">
+        <p class="eyebrow">Why it matters</p>
+        <h2>You can see a wilted leaf. You can't see the heat that caused it.</h2>
+      </div>
+      <div class="section-body">
+        <p>Commercial pest management today runs on a single reactive loop: scout the field, spot the damage, spray everything. By the time an infestation is visible to the human eye, the population has often already passed the point where treatment is still cheap — and a calendar-based spraying schedule is no substitute, because insect development is driven by accumulated heat, not the date on a wall planner.</p>
+
+        <div class="stat-row">
+          <div class="stat-block">
+            <span class="stat-block-num">~40%</span>
+            <span class="stat-block-label">of global crop production is lost to pests every year</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-block-num">$70B+</span>
+            <span class="stat-block-label">lost annually to invasive insect damage worldwide</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-block-num">~1–2%</span>
+            <span class="stat-block-label">true outbreak rate in the data — rare, and each one is costly</span>
+          </div>
+        </div>
+
+        <p>Insects are <em>ectothermic</em> — their body temperature, and every biological process inside it, is set entirely by the surrounding environment. Below a species' own base temperature (<span class="mono-inline">T<sub>base</sub></span>), development simply doesn't happen; above it, heat accumulates day by day until the insect crosses from egg, to larva, to an adult capable of causing damage. That accumulated heat is called a Growing Degree Day (GDD) — a measurement entomologists already trust, that CROP runs automatically, for every field, every day.</p>
+        <p class="source-line">Source: Food and Agriculture Organization of the United Nations (FAO) — up to 40% of global crop production lost to pests annually; invasive insects cost the global economy at least $70 billion a year.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTION / PIPELINE ============ -->
+  <section class="section section-alt" id="solution">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">The CROP pipeline</p>
+        <h2>Four steps, one line from a weather reading to a farmer's next move.</h2>
+        <p class="section-lead">Not a black box — a chain a grower or agronomist can follow end to end.</p>
+      </div>
+
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <span class="pipeline-num">01 · Sense</span>
+          <h3>Read the weather</h3>
+          <p>Daily maximum and minimum temperature — plus humidity — is pulled for every registered field, independent of which pest is being tracked.</p>
+        </div>
+        <div class="pipeline-step">
+          <span class="pipeline-num">02 · Accumulate</span>
+          <h3>Turn heat into biology</h3>
+          <p>A Growing Degree Day engine converts that heat into developmental progress against each pest's own base temperature — the same thermal-biology math entomologists already use, run automatically.</p>
+        </div>
+        <div class="pipeline-step">
+          <span class="pipeline-num">03 · Score</span>
+          <h3>Classify the risk</h3>
+          <p>A machine-learning model fuses accumulated heat, recent trap counts and microclimate into a three-tier outbreak risk — Low, Mid, High — for the next 3 and 7 days.</p>
+        </div>
+        <div class="pipeline-step">
+          <span class="pipeline-num">04 · Guide</span>
+          <h3>Tell the farmer what to do</h3>
+          <p>A Mid or High score triggers a specific, agronomist-authored treatment protocol and a plain-language alert — delivered to the dashboard, and by SMS or WhatsApp, so no farmer needs a smartphone to get the warning in time.</p>
+        </div>
+      </div>
+
+      <div class="flow-strip" role="img" aria-label="Data flow: Weather API leads to GDD Engine leads to ML Risk Model leads to Treatment Protocol leads to Farmer, delivered via dashboard, SMS or WhatsApp">
+        <span>Weather API</span><span class="flow-arrow">→</span>
+        <span>GDD Engine <small>(C#)</small></span><span class="flow-arrow">→</span>
+        <span>ML Risk Model <small>(ONNX)</small></span><span class="flow-arrow">→</span>
+        <span>Treatment Protocol</span><span class="flow-arrow">→</span>
+        <span>Farmer <small>(dashboard · SMS · WhatsApp)</small></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCIENCE ============ -->
+  <section class="section" id="science">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The science</p>
+        <h2>Built on thermal biology and a real research dataset — not a hunch.</h2>
+      </div>
+
+      <div class="science-grid">
+        <div class="science-card">
+          <h3>The data</h3>
+          <p>The base panel spans <strong>280,512 rows</strong> across <strong>8 locations × 4 sub-sites</strong>, <strong>3 target species</strong> and <strong>6 crops</strong> (tomato, pepper, cucumber, citrus, peach, fig), covering 2017–2024. Feature engineering expands 37 raw columns into <strong>86 model-ready features</strong> — cyclical calendar encodings, lags and rolling trap-count trends, and crop-cycle position among them.</p>
+          <div class="mini-table">
+            <div><span>Train</span><span>210,336 rows · 2017–2022 · 1.93% outbreak rate</span></div>
+            <div><span>Test</span><span>70,176 rows · 2023–2024 · 1.92% outbreak rate</span></div>
+          </div>
+          <p class="fine-print">Split on a calendar-year boundary so both sides see a full seasonal cycle — an earlier mid-year cutoff was rejected for exactly that reason.</p>
+        </div>
+
+        <div class="science-card">
+          <h3>The model</h3>
+          <p>Two candidates were compared — <strong>Random Forest</strong> and <strong>XGBoost</strong> — chosen for how they handle a severely imbalanced target (roughly 1–2% of days are true outbreaks) and a mixed feature set of continuous, one-hot and ordinal columns.</p>
+          <p>Accuracy is deliberately <em>not</em> the headline metric: a model that always predicts "no outbreak" would score ~98% accuracy while catching zero real events. CROP is evaluated instead on <strong>PR-AUC</strong> and <strong>Recall</strong>, with a days-to-event estimate scored only across the actionable 0–30 day window.</p>
+          <div class="status-pill">Status: pipeline validated · production model in training (MVP-to-Pilot stage)</div>
+        </div>
+      </div>
+
+      <div class="species-table-wrap">
+        <p class="species-table-title">Species thermal profiles — the starting configuration each forecast runs on</p>
+        <table class="species-table">
+          <thead>
+            <tr><th>Species</th><th>Common threat</th><th>Base temp. (T<sub>base</sub>)</th><th>GDD, egg → adult</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><em>Tuta absoluta</em></td><td>Tomato leafminer</td><td>≈ 8.0°C</td><td>≈ 417 GDD</td></tr>
+            <tr><td><em>Bemisia tabaci</em></td><td>Whitefly · virus vector</td><td>≈ 11°C</td><td>≈ 310 GDD</td></tr>
+            <tr><td><em>Ceratitis capitata</em></td><td>Medfly · quarantine pest</td><td>≈ 10°C</td><td>≈ 260–300 GDD</td></tr>
+          </tbody>
+        </table>
+        <p class="fine-print">Thresholds are seeded from published entomology research and versioned per field as local trap data confirms or corrects them — starting configuration, not fixed truths.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRANSPARENCY (why, not just what) ============ -->
+  <section class="section section-alt" id="transparency">
+    <div class="wrap section-grid reverse">
+      <div class="section-head">
+        <p class="eyebrow">Why, not just what</p>
+        <h2>A risk label alone doesn't tell a farmer when to spray.</h2>
+        <p>Every alert ships with the reasoning behind it — the heat accumulated, the life stage reached, the window still open to act — not just a color on a screen.</p>
+      </div>
+
+      <div class="alert-card">
+        <div class="alert-card-head">
+          <span>Field B-02 · <em>Tuta absoluta</em></span>
+          <span class="tier tier-high">High</span>
+        </div>
+        <dl class="alert-facts">
+          <div><dt>GDD progress</dt><dd>380 / 417 <span class="mono-inline">(91%)</span></dd></div>
+          <div><dt>Predicted life stage</dt><dd>Pupa</dd></div>
+          <div><dt>Trigger</dt><dd>6 days of above-threshold heat this week</dd></div>
+          <div><dt>Recommended action</dt><dd><em>Bacillus thuringiensis</em> (Bt) + pheromone mating disruption</dd></div>
+          <div><dt>Window</dt><dd>Tomorrow, 05:00 – 07:30</dd></div>
+        </dl>
+        <p class="alert-caveat">GDD explains what pushed this forecast — it doesn't replace a field scout's own eyes.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <p class="fine-print center">Alerts reach the farmer as a short, direct message — no formulas, no jargon — over SMS or a voice note where that's more reliable than a dashboard.</p>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT ============ -->
+  <section class="section" id="product">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The product</p>
+        <h2>From one weather reading to a whole farm's health, in one place.</h2>
+      </div>
+
+      <div class="overview-card">
+        <div class="overview-card-head">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>Farm Overview — live</span>
+        </div>
+        <div class="overview-stats">
+          <div><span class="overview-num">248</span><span>Fields monitored</span></div>
+          <div><span class="overview-num">17</span><span>Open alerts</span></div>
+          <div><span class="overview-num">3</span><span>Species tracked per field</span></div>
+        </div>
+        <div class="tier-bar" role="img" aria-label="Risk distribution: 61 percent Low, 24 percent Mid, 15 percent High">
+          <span class="tier-seg tier-seg-low" style="flex:61">Low 61%</span>
+          <span class="tier-seg tier-seg-mid" style="flex:24">Mid 24%</span>
+          <span class="tier-seg tier-seg-high" style="flex:15">High 15%</span>
+        </div>
+      </div>
+
+      <div class="who-grid">
+        <div class="who-card">
+          <h3>Growers &amp; farm managers</h3>
+          <p>See a converging outbreak days before it's visible, and act on one field at a time.</p>
+        </div>
+        <div class="who-card">
+          <h3>Agricultural cooperatives</h3>
+          <p>The same forecasting, aggregated across every member farm in one enterprise view.</p>
+        </div>
+        <div class="who-card">
+          <h3>Agronomy consultancies</h3>
+          <p>A client-facing dashboard, plus the tools to author and calibrate the treatment-protocol knowledge base.</p>
+        </div>
+        <div class="who-card">
+          <h3>Government &amp; plant-health bodies</h3>
+          <p>Regional risk aggregation, with Medfly's quarantine status flagged independently of any single farm's economics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREENS ============ -->
+  <section class="section section-alt" id="screens">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Inside the prototype</p>
+        <h2>Five screens, from the whole farm down to one recommendation.</h2>
+        <p class="section-lead">Pulled from the approved product design — a real demo walkthrough for an agronomist named Sally at the El-Beheira Agricultural Estate.</p>
+      </div>
+
+      <div class="screens-list">
+
+        <article class="screen-row">
+          <div class="screen-mock">
+            <img src="assets/images/screens/dashboard.webp" alt="CROP Dashboard screen — accumulative GDD, target pest, live field weather, and the 7-day Pest Risk Monitor" width="1280" height="1078" loading="lazy">
+          </div>
+          <div class="screen-copy">
+            <span class="screen-index">01</span>
+            <h3>Dashboard</h3>
+            <p>Accumulated GDD, the currently tracked pest, live field weather, and a rolling 7-day past-and-forecast Pest Risk Monitor, with one tap through to recommendations or the full report.</p>
+          </div>
+        </article>
+
+        <article class="screen-row reverse">
+          <div class="screen-mock">
+            <img src="assets/images/screens/farm-overview.webp" alt="CROP Farm Overview screen — farm health score, satellite NDVI parcel grid, and per-parcel status for the El-Beheira Agricultural Estate" width="1600" height="2480" loading="lazy">
+          </div>
+          <div class="screen-copy">
+            <span class="screen-index">02</span>
+            <h3>Farm Overview</h3>
+            <p>An aggregate farm health score, a satellite/NDVI parcel grid (El-Beheira Agricultural Estate, 140 Ha across three crops), soil moisture and irrigation status, and a per-parcel card for crop stage, trap catch, and active protocol.</p>
+          </div>
+        </article>
+
+        <article class="screen-row">
+          <div class="screen-mock">
+            <img src="assets/images/screens/pests.webp" alt="CROP Pests screen — per-species GDD progress, predicted life stage, and the GDD accumulation chart for Tuta absoluta, Bemisia tabaci, and Ceratitis capitata" width="1600" height="1421" loading="lazy">
+          </div>
+          <div class="screen-copy">
+            <span class="screen-index">03</span>
+            <h3>Pests</h3>
+            <p>A per-species deep dive across all three tracked pests — GDD progress toward emergence, predicted life stage, days to emergence — plus a trap-count-vs-threshold chart and the predicted field impact behind the number.</p>
+          </div>
+        </article>
+
+        <article class="screen-row reverse">
+          <div class="screen-mock">
+            <img src="assets/images/screens/guidance.webp" alt="CROP Guidance screen — the recommended and scheduled treatment protocols, ranked by priority" width="1600" height="1005" loading="lazy">
+          </div>
+          <div class="screen-copy">
+            <span class="screen-index">04</span>
+            <h3>Guidance</h3>
+            <p>The structured, scheduled treatment list — specific method, dosage, application window and safety certification per field, grouped by priority, plus the model diagnostics behind an unusual trigger.</p>
+          </div>
+        </article>
+
+        <article class="screen-row">
+          <div class="screen-mock">
+            <img src="assets/images/screens/help.webp" alt="CROP Help screen — FAQ knowledge base on GDD, NDVI, and risk thresholds, plus agronomist contact support" width="1280" height="972" loading="lazy">
+          </div>
+          <div class="screen-copy">
+            <span class="screen-index">05</span>
+            <h3>Help</h3>
+            <p>A knowledge base on how risk, GDD and NDVI work, live agronomist chat with a sub-4-minute average response time, a technical ticket form, and the downloadable CROP PDF report.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ BUSINESS ============ -->
+  <section class="section" id="business">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The business</p>
+        <h2>A cheaper spray schedule is a business model, not just an environmental one.</h2>
+      </div>
+      <p class="section-lead-wide">Every unnecessary spray is a real cost the grower already feels — CROP's incentive and the field's incentive point the same direction from day one.</p>
+
+      <div class="bmc-grid">
+        <div class="bmc-card"><h4>Customer segments</h4><ul><li>Row-crop &amp; specialty growers</li><li>Agricultural cooperatives</li><li>Agronomy consultancies</li><li>Government plant-health bodies</li><li>Crop insurers <em>(future)</em></li></ul></div>
+        <div class="bmc-card"><h4>Value proposition</h4><ul><li>Warning before damage, not after</li><li>Spray only when GDD says it matters</li><li>One place for pest risk, soil and NDVI</li><li>Recommendations an agronomist already vetted</li></ul></div>
+        <div class="bmc-card"><h4>Channels</h4><ul><li>Direct sales to growers</li><li>Cooperative partnerships</li><li>The CROP web dashboard</li><li>Email, SMS &amp; WhatsApp alerts</li></ul></div>
+        <div class="bmc-card"><h4>Key activities</h4><ul><li>Running &amp; improving the forecasting engine</li><li>Maintaining the treatment-protocol knowledge base</li><li>Expanding species &amp; crop coverage</li><li>Farmer onboarding &amp; agronomist support</li></ul></div>
+      </div>
+
+      <div class="revenue-streams">
+        <div class="revenue-stream">
+          <span class="stream-num">Stream 01</span>
+          <h4>Per-field / per-acre subscription</h4>
+          <p>The base of the business — priced by field and tiered by which species modules are active, so cost scales with the herd of fields actually being watched.</p>
+        </div>
+        <div class="revenue-stream">
+          <span class="stream-num">Stream 02</span>
+          <h4>Enterprise &amp; cooperative licensing</h4>
+          <p>One contract, one aggregated view, across every member farm a cooperative or farm-management company operates.</p>
+        </div>
+        <div class="revenue-stream">
+          <span class="stream-num">Stream 03</span>
+          <h4>Insurer data licensing <em>(future)</em></h4>
+          <p>Documented, before/after outbreak-risk history is a loss-prevention signal crop insurers don't currently have — flagged as a later stream, not built yet.</p>
+        </div>
+      </div>
+
+      <div class="roadmap">
+        <div class="roadmap-step"><span class="roadmap-num">01</span><h4>Proof of Concept</h4><p>Validate the GDD-to-outbreak correlation on a single pilot field, one species.</p></div>
+        <div class="roadmap-step"><span class="roadmap-num">02</span><h4>MVP Build</h4><p>Live weather feeds, the GDD + ML engine, and the full five-screen dashboard — where this build stands today.</p></div>
+        <div class="roadmap-step"><span class="roadmap-num">03</span><h4>Field Pilot</h4><p>Multi-field deployment, benchmarked against real outbreak events, thresholds refined with agronomist feedback.</p></div>
+        <div class="roadmap-step"><span class="roadmap-num">04</span><h4>Scale</h4><p>New species, crops and regions; NDVI fused into a v2 model; a native mobile app.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <section class="section section-alt" id="stack">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Under the hood</p>
+        <h2>The stack, chosen for a system that runs unattended every night.</h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <h4>Frontend</h4>
+          <div class="tag-row"><span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>TypeScript</span><span>React</span></div>
+        </div>
+        <div class="stack-card">
+          <h4>Design</h4>
+          <div class="tag-row"><span>Figma</span><span>Stitch AI</span></div>
+        </div>
+        <div class="stack-card">
+          <h4>Backend</h4>
+          <div class="tag-row"><span>C# / .NET</span><span>FastAPI</span></div>
+        </div>
+        <div class="stack-card">
+          <h4>AI / ML</h4>
+          <div class="tag-row"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>LightGBM</span><span>XGBoost</span><span>Gradient Boosting</span></div>
+        </div>
+        <div class="stack-card">
+          <h4>Data layer</h4>
+          <div class="tag-row"><span>PostgreSQL</span><span>PostGIS</span><span>TimescaleDB</span><span>Redis</span><span>S3-compatible storage</span></div>
+        </div>
+        <div class="stack-card">
+          <h4>Quality &amp; delivery</h4>
+          <div class="tag-row"><span>xUnit</span><span>Moq</span><span>Serilog</span><span>Docker</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="section" id="team">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Who's building this</p>
+        <h2>Four disciplines, one deadline.</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <span class="team-initials">RM</span>
+          <h3>Rodina Mohamed</h3>
+          <span class="team-role">CEO — UI/UX Designer</span>
+          <p>Product design and the interface every other screen in this build is grounded in.</p>
+        </div>
+        <div class="team-card">
+          <span class="team-initials">ZA</span>
+          <h3>Zead Abdelkader</h3>
+          <span class="team-role">COO — Full-Stack Developer</span>
+          <p>End-to-end product build, from the dashboard down to the API it talks to.</p>
+        </div>
+        <div class="team-card">
+          <span class="team-initials">MM</span>
+          <h3>Mayar Magdy</h3>
+          <span class="team-role">CAIO — ML Engineer</span>
+          <p>Dataset design, feature engineering, and the outbreak-classification model itself.</p>
+        </div>
+        <div class="team-card">
+          <span class="team-initials">MR</span>
+          <h3>Mahmoud Rageh</h3>
+          <span class="team-role">CTO — Backend Developer</span>
+          <p>Backend architecture, the GDD engine, and every integration behind it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-cta" id="contact">
+    <div class="wrap contact-inner">
+      <h2>Let's build something.</h2>
+      <p>Questions about CROP, the model, or the business case — reach out any way that's easiest.</p>
+      <div class="contact-links">
+        <a href="mailto:crop16161@gmail.com">✉️ crop16161@gmail.com</a>
+        <a href="tel:+201097950443">📞 +20 10 9795 0443</a>
+
+      </div>
+      <p class="fine-print">LinkedIn page coming soon — link to be added once it's live.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span><strong>CROP</strong> — Sense. Predict. Protect.</span>
+    <span class="fine-print">Control and Radical Outbreak Protection — early pest-outbreak forecasting for row-crop and specialty growers.</span>
+  </div>
+</footer>
+
+<script src="js/navigation.js" defer></script>
+<script src="js/active-section.js" defer></script>
+</body>
+</html>

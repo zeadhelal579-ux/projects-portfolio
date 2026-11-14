@@ -1,0 +1,19 @@
+/* =============================================================================
+   File: screens.css
+   Purpose: Screens section (#screens): five prototype screenshots, each a .screen-row (image + copy), some mirrored with .reverse.
+   ============================================================================= */
+
+.screens-list{ display:flex; flex-direction:column; gap:64px; }
+.screen-row{ display:grid; grid-template-columns:1.3fr .7fr; gap:44px; align-items:center; }
+.screen-row.reverse{ grid-template-columns:.7fr 1.3fr; }
+.screen-row.reverse .screen-mock{ order:2; }
+.screen-row.reverse .screen-copy{ order:1; }
+.screen-mock{
+  background:var(--bg); border-radius:var(--radius); overflow:hidden;
+  box-shadow:0 24px 48px -24px rgba(0,0,0,0.55);
+}
+.screen-mock img{ display:block; width:100%; height:auto; }
+.screen-copy{}
+.screen-index{ font-weight:800; color:var(--accent); font-size:.85rem; }
+.screen-copy h3{ margin:.35em 0 .5em; }
+.screen-copy p{ font-size:.95rem; margin:0; }

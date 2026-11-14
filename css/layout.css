@@ -1,0 +1,25 @@
+/* =============================================================================
+   File: layout.css
+   Purpose: Shared layout primitives: .wrap container, skip link, keyboard focus ring, .eyebrow label, small-print helpers, and the section shells (.section, .section-alt, .section-head, .section-grid) used by every page section.
+   ============================================================================= */
+
+.wrap{ max-width:var(--maxw); margin:0 auto; padding:0 28px; }
+a:focus-visible, button:focus-visible{
+  outline:2px solid var(--accent); outline-offset:3px; border-radius:4px;
+}
+.mono-inline{ font-family:var(--sans); font-weight:700; font-size:.92em; color:var(--ink); }
+.eyebrow{
+  font-family:var(--sans); font-weight:700; font-size:.82rem;
+  color:var(--accent); margin:0 0 .9em; letter-spacing:.02em;
+}
+.fine-print{ font-size:.85rem; color:var(--ink-faint); max-width:62ch; }
+.fine-print.center{ margin:0 auto; text-align:center; }
+.section{ padding:88px 0; border-top:1px solid var(--line-soft); }
+.section-alt{ background:var(--bg-panel); }
+.section-head{ max-width:640px; margin-bottom:2.2em; }
+.section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+.section-lead{ color:var(--ink-dim); }
+.section-lead-wide{ max-width:70ch; margin-bottom:2.4em; }
+.section-grid{ display:grid; grid-template-columns:.9fr 1.1fr; gap:56px; align-items:start; }
+.section-grid.reverse{ grid-template-columns:1.1fr .9fr; }
+.section-body p{ max-width:60ch; }

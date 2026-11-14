@@ -1,0 +1,82 @@
+/* =============================================================================
+   File: base.css
+   Purpose: Design tokens (CSS variables from the CROP brand kit), box-sizing reset, page background and base typography (headings, paragraphs, links). Loaded first because every other file reads these variables.
+   ============================================================================= */
+
+:root{
+  --bg:        #101b12;
+  --bg-panel:  #10190E;
+  --bg-panel-2:#162013;
+  --line:      rgba(236,234,235,0.12);
+  --line-soft: rgba(236,234,235,0.07);
+
+  --ink:       #EFEFEA;
+  --ink-dim:   #ABB3A6;
+  --ink-faint: #a0ad9f;
+
+  --brand-deep:  #0F4D10;      /* CROP Primary */
+  --accent:      #a4d88a;      /* CROP Secondary — main pop accent on dark UI */
+  --accent-ink:  #06280B;
+  --accent-soft: rgba(76,175,80,0.16);
+  --gold:        #F4C04E;      /* CROP Tertiary */
+  --gold-soft:   rgba(244,192,78,0.16);
+
+  --risk-low:    #a4d88a;
+  --risk-low-bg: rgba(76,175,80,0.18);
+  --risk-mid:    #F4C04E;
+  --risk-mid-bg: rgba(244,192,78,0.18);
+  --risk-high:   #A93226;
+  --risk-high-bg:rgba(169,50,38,0.20);
+
+  --card-light:  #F6F4EE;      /* light UI, as used in the real product screens */
+  --card-light-2:#EDEBE4;
+  --ink-on-light:#20291F;
+  --ink-on-light-dim:#5B6357;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --maxw: 1160px;
+
+  --display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; scroll-padding-top:84px; }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:var(--display);
+  font-weight:700;
+  line-height:1.15;
+  margin:0 0 .5em;
+  color:var(--ink);
+  letter-spacing:-.01em;
+}
+h2{ font-size:clamp(1.7rem, 1.2rem + 2vw, 2.4rem); max-width:26ch; }
+h3{ font-size:1.2rem; font-weight:700; }
+h4{ font-size:1rem; font-weight:700; letter-spacing:.01em; }
+p{ margin:0 0 1em; color:var(--ink-dim); max-width:62ch; }
+em{ color:var(--ink); font-style:italic; }
+strong{ color:var(--ink); font-weight:700; }
+a{ color:inherit; }
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 200;
+  padding: 10px 16px;
+  background: #fff;
+  color: #14251f;
+  border-radius: 8px;
+  transform: translateY(-160%);
+}
+.skip-link:focus { transform: translateY(0); }
+:focus-visible { outline: 2px solid #b66a23; outline-offset: 4px; }

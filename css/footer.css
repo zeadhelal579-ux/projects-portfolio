@@ -1,0 +1,8 @@
+/* =============================================================================
+   File: footer.css
+   Purpose: Site footer.
+   ============================================================================= */
+
+.site-footer{ border-top:1px solid var(--line-soft); padding:28px 0; }
+.site-footer .wrap{ display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+.site-footer strong{ font-weight:800; }

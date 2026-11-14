@@ -1,0 +1,21 @@
+/* =============================================================================
+   File: product.css
+   Purpose: Product section (#product): the farm overview card, the risk .tier-bar and the four 'who it is for' cards.
+   ============================================================================= */
+
+.overview-card{ background:var(--bg-panel); border:1px solid var(--line); border-radius:var(--radius); padding:28px; margin-bottom:40px; }
+.overview-card-head{ display:flex; align-items:center; gap:.5em; font-weight:700; margin-bottom:1.4em; }
+.live-dot{ width:8px; height:8px; border-radius:50%; background:var(--risk-low); box-shadow:0 0 0 3px var(--risk-low-bg); }
+.overview-stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:1.4em; }
+.overview-stats div{ display:flex; flex-direction:column; gap:2px; }
+.overview-num{ font-size:1.7rem; font-weight:800; color:var(--ink); }
+.overview-stats span:last-child{ font-size:.82rem; color:var(--ink-dim); }
+.tier-bar{ display:flex; height:36px; border-radius:8px; overflow:hidden; font-size:.72rem; font-weight:700; }
+.tier-seg{ display:flex; align-items:center; justify-content:center; color:#0A1509; }
+.tier-seg-low{ background:var(--risk-low); }
+.tier-seg-mid{ background:var(--risk-mid); }
+.tier-seg-high{ background:var(--risk-high); color:#FBEAE7; }
+.who-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+.who-card{ border:1px solid var(--line); border-radius:var(--radius); padding:22px; }
+.who-card h3{ font-size:1.02rem; margin-bottom:.5em; }
+.who-card p{ font-size:.88rem; margin:0; }

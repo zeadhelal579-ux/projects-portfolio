@@ -1,0 +1,37 @@
+/* =============================================================================
+   File: responsive.css
+   Purpose: Breakpoints at 980px and 720px. Loaded after every section file so these overrides always win the cascade.
+   ============================================================================= */
+
+@media (max-width:980px){
+  .section-grid, .section-grid.reverse{ grid-template-columns:1fr; }
+  .pipeline{ grid-template-columns:repeat(2,1fr); }
+  .science-grid{ grid-template-columns:1fr; }
+  .who-grid{ grid-template-columns:repeat(2,1fr); }
+  .bmc-grid{ grid-template-columns:repeat(2,1fr); }
+  .revenue-streams{ grid-template-columns:1fr; }
+  .roadmap{ grid-template-columns:repeat(2,1fr); }
+  .stack-grid{ grid-template-columns:1fr; }
+  .team-grid{ grid-template-columns:repeat(2,1fr); }
+  .screen-row, .screen-row.reverse{ grid-template-columns:1fr; }
+  .screen-row.reverse .screen-mock, .screen-row.reverse .screen-copy{ order:initial; }
+}
+@media (max-width:900px){
+  .hero-inner{ grid-template-columns:1fr; }
+
+  .main-nav{ position:absolute; top:72px; left:0; right:0; background:var(--bg); border-bottom:1px solid var(--line); flex-direction:column; align-items:flex-start; padding:18px 28px; gap:14px; display:none; }
+  .main-nav.open{ display:flex; }
+  .nav-toggle{ display:flex; }
+  .header-actions .btn-sm{ display:none; }
+  .stat-row{ grid-template-columns:1fr; }
+  .pipeline{ grid-template-columns:1fr; }
+  .who-grid{ grid-template-columns:1fr; }
+  .bmc-grid{ grid-template-columns:1fr; }
+  .roadmap{ grid-template-columns:1fr; }
+  .team-grid{ grid-template-columns:1fr; }
+  .alert-facts{ grid-template-columns:1fr; }
+  .section{ padding:64px 0; }
+  .wrap{ padding:0 20px; }
+}
+
+@media (max-width:520px){ .hero-stats{ grid-template-columns:1fr; } }

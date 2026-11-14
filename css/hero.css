@@ -1,0 +1,45 @@
+/* Pairs the CROP introduction with its field dashboard. */
+.hero {
+  padding: clamp(48px, 8vw, 104px) 0 64px;
+  background: radial-gradient(ellipse at 80% 10%, #2a4124, transparent 65%);
+}
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+}
+.hero-title {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: .94;
+  max-width: 10ch;
+  font-weight: 700;
+}
+.hero-sub { font-size: 1.05rem; margin-bottom: 1.5rem; }
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-preview {
+  margin: 0;
+  padding: 10px;
+  background: #1e2e1e;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.hero-preview img { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); }
+.hero-preview figcaption { padding: 10px 4px 2px; font-size: .85rem; color: var(--ink-dim); }
+.hero-stats {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.stat-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.stat-num { font-size: 1.65rem; font-weight: 800; color: var(--accent); }
+.stat-label { font-size: .85rem; color: var(--ink-dim); }

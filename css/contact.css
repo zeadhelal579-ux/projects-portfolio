@@ -1,0 +1,16 @@
+/* =============================================================================
+   File: contact.css
+   Purpose: Contact section (#contact): centred call-to-action block and the contact link pills.
+   ============================================================================= */
+
+.section-cta{ text-align:center; background:var(--bg-panel); }
+.contact-inner{ max-width:600px; }
+.contact-inner h2{ margin-left:auto; margin-right:auto; }
+.contact-inner p{ margin-left:auto; margin-right:auto; }
+.contact-links{ display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin:1.8em 0 1.2em; font-size:.92rem; }
+.contact-links a{
+  display:inline-flex; align-items:center; gap:.5em; text-decoration:none;
+  padding:.85em 1.4em; border-radius:999px; border:1px solid var(--line);
+  background:var(--bg); font-weight:700; transition:border-color .15s ease, color .15s ease;
+}
+.contact-links a:hover{ color:var(--accent); border-color:var(--accent); }

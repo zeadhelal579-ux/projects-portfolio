@@ -1,0 +1,17 @@
+/* =============================================================================
+   File: transparency.css
+   Purpose: Transparency section (#transparency): the example alert card with its risk .tier pill and the .alert-facts list.
+   ============================================================================= */
+
+.alert-card{ background:var(--bg-panel); border:1px solid var(--line); border-radius:var(--radius); padding:26px; }
+.alert-card-head{ display:flex; justify-content:space-between; align-items:center; font-weight:700; margin-bottom:1em; }
+.tier{ font-size:.75rem; font-weight:800; padding:.3em .8em; border-radius:999px; text-transform:uppercase; letter-spacing:.03em; }
+.tier-low{ background:var(--risk-low-bg); color:var(--risk-low); }
+.tier-mid{ background:var(--risk-mid-bg); color:var(--risk-mid); }
+.tier-high{ background:var(--risk-high-bg); color:var(--risk-high); }
+.tier.sm{ font-size:.66rem; padding:.25em .6em; }
+.alert-facts{ display:grid; grid-template-columns:1fr 1fr; gap:14px 20px; margin:0 0 1em; }
+.alert-facts div{ border-top:1px solid var(--line); padding-top:8px; }
+.alert-facts dt{ font-size:.76rem; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.03em; margin-bottom:2px; }
+.alert-facts dd{ margin:0; color:var(--ink); font-size:.94rem; }
+.alert-caveat{ font-size:.85rem; color:var(--ink-faint); margin:0; }
