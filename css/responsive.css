@@ -1,0 +1,49 @@
+/* =============================================================================
+   File: responsive.css
+   Purpose: Breakpoints at 920px and 560px. Loaded after every section file so these
+   overrides always win the cascade.
+   ============================================================================= */
+
+@media (max-width:1050px){
+  .nav__links {
+    display: none;
+    position: absolute;
+    inset: 100% 0 auto;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 28px;
+    background: var(--forest);
+    border-bottom: 1px solid var(--line-on-dark);
+  }
+  .nav__links.open { display: flex; }
+  .nav__right .btn { display: none; }
+  .nav__toggle{display:block;}
+  .hero__grid{grid-template-columns:1fr;}
+  .hero__art{width:100%;max-width:680px;}
+  .stat-grid{grid-template-columns:1fr;}
+  .pipeline{grid-template-columns:1fr 1fr;}
+  .science-grid{grid-template-columns:1fr;gap:32px;}
+  .shap-wrap,.dash-wrap{grid-template-columns:1fr;gap:32px;}
+  .contact-card{padding:48px 24px;}
+  .pill{font-size:0.86rem;padding:11px 18px;}
+  .audience-grid{grid-template-columns:1fr 1fr;}
+  .stack-grid{grid-template-columns:1fr;gap:28px;}
+  .bmc{grid-template-columns:1fr 1fr;}
+  .bmc-col{grid-template-rows:auto auto;}
+  .bmc--cost,.bmc--rev{grid-column:span 2;}
+  .rev-grid{grid-template-columns:1fr;}
+  .market-row{grid-template-columns:1fr;}
+  .diff-list{grid-template-columns:1fr;}
+  .shot-grid{grid-template-columns:1fr;}
+  .team-grid{grid-template-columns:1fr;}
+  .section{padding:72px 0;}
+}
+@media (max-width:560px){
+  .pipeline{grid-template-columns:1fr;}
+  .audience-grid{grid-template-columns:1fr;}
+  .bmc{grid-template-columns:1fr;}
+  .bmc--cost,.bmc--rev{grid-column:span 1;}
+  .dash-metrics{grid-template-columns:1fr 1fr;}
+  .hero__stats{gap:20px;}
+  .container{padding:0 20px;}
+}

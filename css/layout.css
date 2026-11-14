@@ -1,0 +1,15 @@
+/* =============================================================================
+   File: layout.css
+   Purpose: Section rhythm: .section background variants (dark / darker / light), the
+   .section__head heading block.
+   ============================================================================= */
+
+.section{padding:96px 0;}
+.section--dark{background:var(--forest);color:var(--parchment);}
+.section--darker{background:var(--forest-2);color:var(--parchment);}
+.section--light{background:var(--parchment);color:var(--ink);}
+.section__head{max-width:640px;margin-bottom:56px;}
+.section__title{font-size:clamp(1.7rem,2.4vw + 1rem,2.5rem);margin-bottom:14px;}
+.section__lead{font-size:1.05rem;opacity:0.86;max-width:56ch;}
+.section--light .eyebrow{color:var(--rust);}
+.section--light .eyebrow::before{background:var(--rust);}

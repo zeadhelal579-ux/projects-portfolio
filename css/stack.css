@@ -1,0 +1,9 @@
+/* =============================================================================
+   File: stack.css
+   Purpose: Stack section (#stack): technology groups and chips.
+   ============================================================================= */
+
+.stack-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:36px;}
+.stack-group b{display:block;font-family:var(--mono);font-size:0.74rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--haze);margin-bottom:12px;}
+.chip-row{display:flex;flex-wrap:wrap;gap:9px;}
+.chip{font-size:0.85rem;background:rgba(245,239,225,0.06);border:1px solid var(--line-on-dark);padding:8px 14px;border-radius:999px;}

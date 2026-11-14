@@ -1,0 +1,19 @@
+/* =============================================================================
+   File: explainable-ai.css
+   Purpose: Explainable AI section (no id): the SHAP card and its bars.
+   ============================================================================= */
+
+.shap-wrap{display:grid;grid-template-columns:0.9fr 1.1fr;gap:52px;align-items:center;}
+.shap-card{
+  background:var(--ink);border-radius:20px;padding:30px 28px;box-shadow:var(--shadow);
+}
+.shap-card__top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:22px;}
+.shap-card__top b{font-family:var(--display);font-size:1.3rem;color:var(--parchment);}
+.shap-level{font-family:var(--mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;background:var(--ember);color:var(--ink);padding:4px 10px;border-radius:999px;}
+.shap-bar-row{margin-bottom:16px;}
+.shap-bar-row:last-child{margin-bottom:0;}
+.shap-bar-label{display:flex;justify-content:space-between;font-size:0.82rem;color:var(--parchment);opacity:0.85;margin-bottom:6px;}
+.shap-bar-track{height:8px;border-radius:999px;background:rgba(245,239,225,0.1);overflow:hidden;}
+.shap-bar-fill{height:100%;border-radius:999px;}
+.shap-bar-fill.up{background:var(--ember);}
+.shap-bar-fill.down{background:var(--haze);}

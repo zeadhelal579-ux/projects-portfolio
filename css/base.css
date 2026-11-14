@@ -1,0 +1,67 @@
+/* =============================================================================
+   File: base.css
+   Purpose: Design tokens (colours, fonts, shadow), theme blocks, reset, base typography,
+   .container and .eyebrow. Loaded first: every other file relies on these variables.
+   ============================================================================= */
+
+:root{
+  --forest:#132A22;
+  --forest-2:#0D2019;
+  --parchment:#F5EFE1;
+  --parchment-2:#ECE3CE;
+  --sage:#6C8C72;
+  --ember:#E2793D;
+  --ember-2:#F2A365;
+  --haze:#9FB8B4;
+  --rust:#9B4A3D;
+  --ink:#12241F;
+  --line-on-dark:rgba(245,239,225,0.14);
+  --line-on-light:rgba(18,36,31,0.14);
+  --shadow:0 24px 60px -30px rgba(0,0,0,0.55);
+  --display:'Fraunces', ui-serif, Georgia, 'Times New Roman', serif;
+  --body:'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono:'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:84px;}
+body{
+  margin:0;
+  background:var(--forest);
+  color:var(--parchment);
+  font-family:var(--body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;}
+.container{max-width:1120px;margin:0 auto;padding:0 28px;}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.08;font-weight:600;}
+p{margin:0;}
+::selection{background:var(--ember);color:var(--ink);}
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:3px;}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--ember);
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:16px;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--ember);}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 200;
+  padding: 10px 16px;
+  background: #fff;
+  color: #14251f;
+  border-radius: 8px;
+  transform: translateY(-160%);
+}
+.skip-link:focus { transform: translateY(0); }
+:focus-visible { outline: 2px solid #b66a23; outline-offset: 4px; }

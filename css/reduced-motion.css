@@ -1,0 +1,10 @@
+/* =============================================================================
+   File: reduced-motion.css
+   Purpose: Accessibility: switches off animations, transitions and smooth scrolling
+   when the visitor's system asks for reduced motion.
+   ============================================================================= */
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important;transition:none !important;}
+  html{scroll-behavior:auto;}
+}

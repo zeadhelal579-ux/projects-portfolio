@@ -1,0 +1,13 @@
+/* =============================================================================
+   File: challenge.css
+   Purpose: Challenge section (#challenge): the three stat cards, note blocks and the
+   sources line.
+   ============================================================================= */
+
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px;}
+.stat-card{background:var(--parchment-2);border-radius:18px;padding:30px 26px;}
+.stat-card b{display:block;font-family:var(--display);font-size:2.6rem;color:var(--rust);font-weight:600;}
+.stat-card span{display:block;margin-top:8px;font-size:0.95rem;opacity:0.85;}
+.challenge__note{max-width:70ch;font-size:0.98rem;opacity:0.9;background:rgba(18,36,31,0.05);border-left:3px solid var(--rust);padding:18px 22px;border-radius:6px;}
+.challenge__note + .challenge__note{margin-top:14px;}
+.source-line{font-family:var(--mono);font-size:0.72rem;opacity:0.6;margin-top:28px;}

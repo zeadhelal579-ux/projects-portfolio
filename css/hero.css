@@ -1,0 +1,33 @@
+/* =============================================================================
+   File: hero.css
+   Purpose: Hero section (first block in <main>): grid, headline, lead text, call-to-action
+   buttons, metric tiles and the drifting plume SVG animation.
+   ============================================================================= */
+
+.hero{position:relative;padding:88px 0 96px;overflow:hidden;}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(60% 55% at 78% 18%, rgba(226,121,61,0.16), transparent 60%),
+             radial-gradient(45% 40% at 10% 90%, rgba(159,184,180,0.12), transparent 60%);
+  pointer-events:none;
+}
+.hero__grid{position:relative;display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:center;}
+.hero__title{font-size:clamp(2.3rem,4.2vw + 1rem,3.7rem);letter-spacing:-0.01em;}
+.hero__title em{font-style:normal;color:var(--ember);}
+.hero__lead{margin-top:22px;font-size:1.12rem;max-width:52ch;opacity:0.88;}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px;}
+.hero__stats{display:flex;gap:28px;margin-top:52px;padding-top:26px;border-top:1px solid var(--line-on-dark);flex-wrap:wrap;}
+.hero__stat b{display:block;font-family:var(--mono);font-size:1.15rem;color:var(--ember-2);}
+.hero__stat span{display:block;font-size:0.76rem;color:var(--haze);margin-top:3px;}
+.hero__note{font-size:0.74rem;color:var(--haze);margin-top:14px;font-family:var(--mono);}
+ .hero__art {
+  margin: 0;
+  padding: 10px;
+  min-width: 0;
+  border-radius: 18px;
+  border: 1px solid var(--line-on-dark);
+  background: var(--forest-2);
+  box-shadow: var(--shadow);
+}
+.hero__art img { width: 100%; height: auto; border-radius: 10px; }
+.hero__art figcaption { padding: 10px 4px 2px; font-size: .8rem; color: var(--haze); }

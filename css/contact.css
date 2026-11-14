@@ -1,0 +1,28 @@
+/* =============================================================================
+   File: contact.css
+   Purpose: Contact section (#contact): the contact card and the email / phone /
+   LinkedIn pills.
+   ============================================================================= */
+
+.contact-card{
+  position:relative;overflow:hidden;border-radius:28px;padding:72px 40px;text-align:center;
+  background:radial-gradient(65% 90% at 50% -10%, rgba(226,121,61,0.16), transparent 60%), var(--ink);
+  border:1px solid var(--line-on-dark);
+}
+.contact-card .eyebrow{justify-content:center;}
+.contact-card .section__title{text-align:center;}
+.contact-card .section__lead{margin:14px auto 0;text-align:center;max-width:52ch;}
+.pill-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:40px;}
+.pill{
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(245,239,225,0.06);border:1px solid var(--line-on-dark);
+  color:var(--parchment);text-decoration:none;font-size:0.94rem;font-weight:500;
+  padding:13px 22px;border-radius:999px;transition:transform .2s ease, border-color .2s ease, background .2s ease;
+}
+.pill:hover{transform:translateY(-2px);border-color:var(--ember);background:rgba(245,239,225,0.1);}
+.pill__icon{font-size:1.05rem;line-height:1;display:inline-flex;}
+.pill__icon--in{
+  width:20px;height:20px;border-radius:5px;background:var(--ember);color:var(--ink);
+  font-family:var(--body);font-weight:700;font-size:0.68rem;align-items:center;justify-content:center;
+}
+.contact-note{margin:36px auto 0;max-width:64ch;font-size:0.8rem;opacity:0.6;}

@@ -1,0 +1,13 @@
+/* =============================================================================
+   File: screens.css
+   Purpose: Screens section (#screens): screenshot figures (.shot), the two-column
+   .shot-grid and the full-width .shot--span.
+   ============================================================================= */
+
+.shot{margin:0 0 22px;border:1px solid var(--line-on-dark);border-radius:18px;overflow:hidden;background:rgba(245,239,225,0.04);}
+.shot img{width:100%;height:auto;display:block;border-bottom:1px solid var(--line-on-dark);}
+.shot figcaption{padding:16px 20px;font-size:0.88rem;opacity:0.82;}
+.shot figcaption b{display:block;font-family:var(--mono);font-weight:500;font-size:0.7rem;letter-spacing:0.09em;text-transform:uppercase;color:var(--ember);margin-bottom:6px;}
+.shot-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.shot-grid .shot{margin:0;}
+.shot--span{grid-column:1/-1;}

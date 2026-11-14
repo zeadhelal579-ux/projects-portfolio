@@ -1,0 +1,9 @@
+/* =============================================================================
+   File: footer.css
+   Purpose: Site footer: brand name and tagline.
+   ============================================================================= */
+
+.footer{padding:48px 0;background:var(--forest-2);border-top:1px solid var(--line-on-dark);}
+.footer__inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+.footer__brand{font-family:var(--display);font-weight:700;font-size:1.05rem;}
+.footer__fine{font-size:0.78rem;opacity:0.55;max-width:60ch;}

@@ -1,0 +1,22 @@
+/* =============================================================================
+   File: nav.css
+   Purpose: Sticky site header: brand, link list, right-hand cluster and the mobile
+   menu button (.nav__toggle). Markup: <header class="site-header"> in index.html.
+   ============================================================================= */
+
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(19,42,34,0.82);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line-on-dark);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;max-width:1120px;margin:0 auto;}
+.nav__brand{display:flex;flex-direction:column;gap:1px;text-decoration:none;}
+.nav__brand-mark{font-family:var(--display);font-weight:700;font-size:1.35rem;letter-spacing:0.01em;color:var(--parchment);}
+.nav__brand-sub{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--haze);}
+.nav__links{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:0.92rem;}
+.nav__links a{text-decoration:none;color:var(--parchment);opacity:0.82;transition:opacity .2s ease;}
+.nav__links a:hover{opacity:1;}
+.nav__right{display:flex;align-items:center;gap:16px;}
+.nav__toggle{display:none;background:none;border:1px solid var(--line-on-dark);color:var(--parchment);width:40px;height:40px;border-radius:8px;font-size:1.1rem;cursor:pointer;}

@@ -1,0 +1,26 @@
+/* =============================================================================
+   File: product.css
+   Purpose: Product section (#product): the dashboard summary card, the distribution
+   bar and the audience cards.
+   ============================================================================= */
+
+.dash-wrap{display:grid;grid-template-columns:1.1fr 0.9fr;gap:52px;align-items:center;}
+.dash-card{background:var(--parchment);color:var(--ink);border-radius:20px;padding:28px;box-shadow:var(--shadow);}
+.dash-card__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+.dash-card__top b{font-family:var(--display);font-size:1.15rem;}
+.dash-card__top span{font-family:var(--mono);font-size:0.68rem;opacity:0.55;}
+.dash-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px;}
+.dash-metrics div{background:var(--parchment-2);border-radius:12px;padding:14px;}
+.dash-metrics b{display:block;font-family:var(--mono);font-size:1.15rem;}
+.dash-metrics span{display:block;font-size:0.68rem;opacity:0.65;margin-top:3px;}
+.dist-bar{display:flex;height:14px;border-radius:999px;overflow:hidden;margin-bottom:8px;}
+.dist-bar span{display:block;height:100%;}
+.dist-legend{display:flex;gap:16px;font-size:0.74rem;flex-wrap:wrap;opacity:0.8;}
+.dist-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px;}
+
+.audience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:10px;}
+.audience-card{background:rgba(19,42,34,0.04);border:1px solid var(--line-on-light);border-radius:14px;padding:18px;}
+.audience-card b{display:block;font-size:0.95rem;margin-bottom:6px;}
+.audience-card p{font-size:0.84rem;opacity:0.75;}
+.biz-row{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;}
+.biz-chip{font-size:0.86rem;background:var(--ink);color:var(--parchment);padding:10px 16px;border-radius:999px;}

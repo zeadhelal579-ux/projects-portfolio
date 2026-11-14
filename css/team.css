@@ -1,0 +1,14 @@
+/* =============================================================================
+   File: team.css
+   Purpose: Team section (#team): team cards and initials avatars.
+   ============================================================================= */
+
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.team-card{border:1px solid var(--line-on-dark);border-radius:18px;padding:26px;}
+.team-avatar{
+  width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-weight:700;color:var(--ink);margin-bottom:18px;font-size:1.05rem;
+}
+.team-card h3{font-size:1.08rem;margin-bottom:2px;}
+.team-role{font-family:var(--mono);font-size:0.72rem;color:var(--ember);letter-spacing:0.04em;margin-bottom:12px;display:block;}
+.team-card p{font-size:0.86rem;opacity:0.78;}

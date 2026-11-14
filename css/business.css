@@ -1,0 +1,33 @@
+/* =============================================================================
+   File: business.css
+   Purpose: Business section (#business): market statistic, differentiators, the
+   nine-cell business model canvas (.bmc), revenue cards and go-to-market chips.
+   ============================================================================= */
+
+.market-row{
+  display:grid;grid-template-columns:0.85fr 1.6fr;gap:40px;align-items:center;
+  background:var(--ink);color:var(--parchment);border-radius:22px;padding:34px 36px;margin-bottom:48px;
+}
+.market-stat b{font-family:var(--display);font-size:2.7rem;color:var(--ember-2);display:block;font-weight:600;}
+.market-stat span{font-size:0.86rem;opacity:0.7;display:block;margin-top:8px;line-height:1.5;}
+.diff-list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.diff-item b{display:block;font-size:0.92rem;margin-bottom:7px;}
+.diff-item p{font-size:0.82rem;opacity:0.72;line-height:1.5;}
+
+
+.bmc{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;align-items:stretch;}
+.bmc-col{display:grid;grid-template-rows:1fr 1fr;gap:14px;}
+.bmc-cell{background:var(--parchment-2);border-radius:14px;padding:18px;}
+.bmc-cell h4{font-family:var(--mono);font-size:0.66rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--rust);margin:0 0 10px;font-weight:500;}
+.bmc-cell ul{margin:0;padding-left:15px;font-size:0.84rem;line-height:1.5;}
+.bmc-cell li{margin-bottom:8px;}
+.bmc-cell li:last-child{margin-bottom:0;}
+.bmc--cost{grid-column:span 2;}
+.bmc--rev{grid-column:span 3;}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px;}
+.rev-card{background:var(--ink);color:var(--parchment);border-radius:16px;padding:24px;}
+.rev-card span{display:block;font-family:var(--mono);font-size:0.66rem;letter-spacing:0.09em;text-transform:uppercase;color:var(--ember-2);margin-bottom:10px;}
+.rev-card b{display:block;font-family:var(--display);font-size:1.1rem;margin-bottom:8px;}
+.rev-card p{font-size:0.86rem;opacity:0.82;}
+.gtm-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+.biz-chip{font-size:0.86rem;background:var(--ink);color:var(--parchment);padding:10px 16px;border-radius:999px;}

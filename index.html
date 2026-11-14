@@ -1,0 +1,537 @@
+<!-- METHIX — project portfolio. Static site: index.html + css/ + js/ + assets/. No build step. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>METHIX — Methane Intelligence &amp; eXplainability</title>
+<meta name="description" content="METHIX is an AI decision-support system that predicts cattle methane emissions, explains why with SHAP, and recommends what to do next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- One <link> per section, in page order. base.css first (variables + reset),
+     responsive.css after all section files so its media queries win the cascade. -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/challenge.css">
+<link rel="stylesheet" href="css/solution.css">
+<link rel="stylesheet" href="css/science.css">
+<link rel="stylesheet" href="css/explainable-ai.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/screens.css">
+<link rel="stylesheet" href="css/business.css">
+<link rel="stylesheet" href="css/stack.css">
+<link rel="stylesheet" href="css/team.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/reduced-motion.css">
+</head>
+<body>
+<a class="skip-link" href="#top">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav__brand" href="#top">
+      <span class="nav__brand-mark">METHIX</span>
+      <span class="nav__brand-sub">Methane Intelligence &amp; eXplainability</span>
+    </a>
+    <ul class="nav__links" id="main-nav">
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#solution">Solution</a></li>
+      <li><a href="#science">Science</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#screens">Screens</a></li>
+      <li><a href="#business">Business</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+    <div class="nav__right">
+      <a class="btn btn--primary btn--sm" href="#contact">Get in touch</a>
+      <button class="nav__toggle" id="navToggle" data-nav-toggle aria-controls="main-nav" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main id="top" tabindex="-1">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <p class="eyebrow">AgriTech × Climate AI</p>
+        <h1 class="hero__title">See what drives <em>cattle methane.</em></h1>
+        <p class="hero__lead">An AI decision-support system for cattle farms. METHIX predicts how much methane each cow emits, explains why in plain terms with explainable AI, and turns that into a recommendation a farmer can actually act on.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#screens">Explore the screens</a>
+          <a class="btn btn--ghost-dark" href="#solution">See how it works</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat"><b>31.82 g/day</b><span>Mean Absolute Error</span></div>
+          <div class="hero__stat"><b>44.03 g/day</b><span>RMSE</span></div>
+          <div class="hero__stat"><b>0.796</b><span>R² on unseen data</span></div>
+        </div>
+        <p class="hero__note">Evaluated on 158 held-out test records — a regression metric, not an accuracy score.</p>
+      </div>
+      <figure class="hero__art">
+        <a href="#screens"><img src="assets/images/screens/01-farm-dashboard.webp" alt="METHIX dashboard with a methane trend chart and recent predictions" width="1500" height="1200" decoding="async" fetchpriority="high"></a>
+        <figcaption>METHIX farm dashboard · methane trends and predictions</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CHALLENGE -->
+  <section class="section section--light" id="challenge">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Why it matters</p>
+        <h2 class="section__title">You can weigh a cow. You can't see her methane.</h2>
+        <p class="section__lead">Farmers can already see feed, milk yield, weight and condition. What they can't see is how much methane an individual cow is about to emit — or why.</p>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card"><b>~40%</b><span>of human-caused methane comes from agriculture</span></div>
+        <div class="stat-card"><b>~32%</b><span>of that comes from livestock systems specifically</span></div>
+        <div class="stat-card"><b>~75%</b><span>of global enteric methane comes from cattle alone</span></div>
+      </div>
+
+      <div>
+        <div class="challenge__note">Inside a cow's rumen, microbes break feed down into hydrogen and CO₂; a separate group of microbes — methanogenic archaea — convert that into methane, released mostly through belching. The exact amount depends on feed composition, intake, breed, age, weight and productivity — all measurable, and all predictable.</div>
+        <div class="challenge__note">The IPCC calls for a 40–45% cut in global methane emissions by 2030 to keep warming under 1.5°C. That target gets closer every time a farmer can act on a number instead of a guess.</div>
+      </div>
+      <p class="source-line">Sources: FAO — Livestock and Enteric Methane · IPCC AR6 WGIII, Ch. 7 (AFOLU)</p>
+    </div>
+  </section>
+
+  <!-- SOLUTION / PIPELINE -->
+  <section class="section section--dark" id="solution">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">The METHIX pipeline</p>
+        <h2 class="section__title">Four steps, one traceable line from cow to decision.</h2>
+        <p class="section__lead">Not a black box — a workflow a farmer can follow from raw data to a next action.</p>
+      </div>
+
+      <div class="pipeline">
+        <div class="pipeline__step">
+          <span class="pipeline__num">01 · Predict</span>
+          <h3>Estimate</h3>
+          <p>The farmer enters herd data — breed, age, weight, feed mix — or it's pulled straight from the farm's own ERP, and the model estimates daily methane output per cow.</p>
+        </div>
+        <div class="pipeline__step">
+          <span class="pipeline__num">02 · Classify</span>
+          <h3>Triage</h3>
+          <p>Every estimate is sorted into Low, Moderate or High, so a farmer can scan an entire herd and spot the cases that need attention first.</p>
+        </div>
+        <div class="pipeline__step">
+          <span class="pipeline__num">03 · Explain</span>
+          <h3>Why</h3>
+          <p>SHAP shows exactly which inputs pushed the number up or down — fibre content, a heat wave, feed intake — not just the final figure.</p>
+        </div>
+        <div class="pipeline__step">
+          <span class="pipeline__num">04 · Support</span>
+          <h3>Act</h3>
+          <p>The explanation becomes a plain-language recommendation for the farmer or nutrition specialist to weigh — not an automatic prescription.</p>
+        </div>
+      </div>
+
+      <div class="flow">
+        <p class="flow__title">Data flow, end to end</p>
+        <div class="flow__line">
+          <span class="flow__node">React dashboard</span><span class="flow__arrow">→</span>
+          <span class="flow__node">.NET backend API</span><span class="flow__arrow">→</span>
+          <span class="flow__node">Live climate data API</span><span class="flow__arrow">→</span>
+          <span class="flow__node">FastAPI AI service + SHAP</span><span class="flow__arrow">→</span>
+          <span class="flow__node">SQL Server</span><span class="flow__arrow">→</span>
+          <span class="flow__node">Explained back to the farmer</span>
+        </div>
+        <p class="flow__note">Heat stress measurably changes how much a cow eats and digests — so METHIX pulls live temperature data for the farm's exact coordinates from a climate data API and feeds it straight into the model, rather than treating climate as an afterthought.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCIENCE: DATA + MODEL -->
+  <section class="section section--light" id="science">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">The science</p>
+        <h2 class="section__title">Built on published research, not a hunch.</h2>
+      </div>
+
+      <div class="science-grid">
+        <div class="science-col">
+          <h3>The data</h3>
+          <p>The base dataset compiles <strong>797 records across 162 variables</strong>, drawn from <strong>213 peer-reviewed publications</strong> on dairy-cow enteric methane spanning 1963–2022 (Penn State research repository / Data in Brief, 2023).</p>
+          <p>METHIX works from a cleaned, processed set of <strong>787 rows × 16 features</strong> — split into <strong>629 training</strong> and <strong>158 held-out test</strong> records, with daily methane output (CH₄ g/day) as the target.</p>
+          <div class="tag-row">
+            <span class="tag">Animal: weight, breed, days in milk</span>
+            <span class="tag">Feed: DMI, CP, NDF, ADF, starch</span>
+            <span class="tag">Production: milk yield, fat, lactose</span>
+          </div>
+        </div>
+        <div class="science-col">
+          <h3>The model</h3>
+          <p>Six approaches were compared before committing to one: Linear Regression, Random Forest, Gradient Boosting, XGBoost, ExtraTrees and CatBoost. The winner was a tuned Random Forest — the <strong>Advanced Tuned Random Forest</strong> that runs in production today.</p>
+          <p style="font-family:var(--mono);font-size:0.78rem;opacity:0.7;">n_estimators = 1000 · max_depth = 25 · max_features = log2 · min_samples_split = 2 · min_samples_leaf = 1 · bootstrap = False</p>
+          <div class="tag-row">
+            <span class="tag">Linear Regression</span><span class="tag">Gradient Boosting</span>
+            <span class="tag">XGBoost</span><span class="tag">ExtraTrees</span><span class="tag">CatBoost</span>
+            <span class="tag tag--final">Advanced Tuned Random Forest — chosen</span>
+          </div>
+          <div class="metric-row">
+            <div class="metric"><b>31.82</b><span>MAE, g/day</span></div>
+            <div class="metric"><b>44.03</b><span>RMSE, g/day</span></div>
+            <div class="metric"><b>0.796</b><span>R²</span></div>
+          </div>
+          <p class="metric-note">R² = 0.796 is variance explained, on 158 unseen records — not a claim of 79.6% accuracy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLAINABLE AI -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="shap-wrap">
+        <div>
+          <p class="eyebrow">Why, not just what</p>
+          <h2 class="section__title">Every prediction comes with its reasons.</h2>
+          <p class="section__lead" style="margin-top:14px;">A number alone doesn't help a farmer change anything. So every prediction ships with a SHAP breakdown — the same explanation a data scientist would draw by hand, generated automatically for every cow.</p>
+          <p class="hero__note" style="margin-top:20px;">SHAP explains what the model responded to. It doesn't, by itself, prove biological cause.</p>
+        </div>
+        <div class="shap-card">
+          <div class="shap-card__top">
+            <b>Cow #102</b>
+            <span class="shap-level">Moderate</span>
+          </div>
+          <div class="shap-bar-row">
+            <div class="shap-bar-label"><span>Dry Matter Intake (DMI)</span><span>↑ increases</span></div>
+            <div class="shap-bar-track"><div class="shap-bar-fill up" style="width:82%"></div></div>
+          </div>
+          <div class="shap-bar-row">
+            <div class="shap-bar-label"><span>ADF (fibre) intake</span><span>↑ increases</span></div>
+            <div class="shap-bar-track"><div class="shap-bar-fill up" style="width:58%"></div></div>
+          </div>
+          <div class="shap-bar-row">
+            <div class="shap-bar-label"><span>Milk yield / DMI ratio</span><span>↓ decreases</span></div>
+            <div class="shap-bar-track"><div class="shap-bar-fill down" style="width:44%"></div></div>
+          </div>
+          <div class="shap-bar-row">
+            <div class="shap-bar-label"><span>Milk fat</span><span>↓ decreases</span></div>
+            <div class="shap-bar-track"><div class="shap-bar-fill down" style="width:30%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT -->
+  <section class="section section--light" id="product">
+    <div class="container">
+      <div class="dash-wrap">
+        <div style="order:2;">
+          <p class="eyebrow">From model to workspace</p>
+          <h2 class="section__title">A dashboard that moves from herd to cow to decision.</h2>
+          <p class="section__lead" style="margin-top:14px;">Farm → Cows → Cow profile → Prediction → Explanation → Recommendations. Each step narrows from the whole herd down to one animal and one action.</p>
+        </div>
+        <div class="dash-card" style="order:1;">
+          <div class="dash-card__top"><b>Farm Overview</b><span>Live</span></div>
+          <div class="dash-metrics">
+            <div><b>248</b><span>Total cows</span></div>
+            <div><b>368 g/day</b><span>Avg. predicted CH₄</span></div>
+            <div><b>17</b><span>Alerts</span></div>
+          </div>
+          <div class="dist-bar">
+            <span style="width:38%;background:var(--sage);"></span>
+            <span style="width:35%;background:var(--ember);"></span>
+            <span style="width:27%;background:var(--rust);"></span>
+          </div>
+          <div class="dist-legend">
+            <span><i style="background:var(--sage);"></i>Low 38%</span>
+            <span><i style="background:var(--ember);"></i>Moderate 35%</span>
+            <span><i style="background:var(--rust);"></i>High 27%</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:72px;">
+        <p class="eyebrow">Who it's for</p>
+        <div class="audience-grid">
+          <div class="audience-card"><b>Farmers &amp; managers</b><p>Spot high-emission cows early and monitor the herd day to day.</p></div>
+          <div class="audience-card"><b>Nutrition specialists</b><p>Bring data-driven evidence into feed-strategy decisions.</p></div>
+          <div class="audience-card"><b>Sustainability teams</b><p>Multi-farm analytics and historical emissions reporting.</p></div>
+          <div class="audience-card"><b>Carbon-credit workflows</b><p>Documentation and tracking support — not certification itself.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENS -->
+  <section class="section section--darker" id="screens">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Inside the prototype</p>
+        <h2 class="section__title">The product, as it actually runs.</h2>
+        <p class="section__lead">Screens from the working METHIX prototype — from the whole herd, down to one cow, down to one recommendation.</p>
+      </div>
+
+      <figure class="shot">
+        <img src="assets/images/screens/01-farm-dashboard.webp" alt="METHIX farm dashboard showing total cattle, average methane, high-risk count, current temperature, a weekly methane trend chart and recent predictions." width="1500" height="1200" loading="lazy" decoding="async">
+        <figcaption><b>01 · Farm dashboard</b>Herd KPIs at a glance — total cattle, average predicted CH₄, high-risk animals, and the live temperature pulled from a climate data API for the farm's coordinates, alongside the methane trend and the latest predictions.</figcaption>
+      </figure>
+
+      <figure class="shot">
+        <img src="assets/images/screens/02-cow-profile-prediction.webp" alt="METHIX cattle detail page for tag 8492 with feed records, predicted methane emission, a SHAP explanation panel and an AI recommendation." width="1500" height="901" loading="lazy" decoding="async">
+        <figcaption><b>02 · Cow profile, prediction &amp; explanation</b>One animal, end to end: feed records on the left, then the predicted emission, the <em>“why this result?”</em> SHAP breakdown of what pushed the number up or down, and the recommendation it turns into.</figcaption>
+      </figure>
+
+      <div class="shot-grid">
+        <figure class="shot">
+          <img src="assets/images/screens/03-cattle-inventory.webp" alt="METHIX cattle inventory table listing cattle ID, breed, age, weight, lactation stage and last emission level." width="1500" height="1200" loading="lazy" decoding="async">
+          <figcaption><b>03 · Cattle inventory</b>The full herd, searchable and filterable by emission level, so high emitters surface first.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/images/screens/04-prediction-history.webp" alt="METHIX predictions history table with date, cattle ID, temperature, predicted methane and emission level, plus CSV export." width="1500" height="747" loading="lazy" decoding="async">
+          <figcaption><b>04 · Prediction history</b>Every prediction kept with the temperature it was made under — filterable, and exportable as CSV for reporting.</figcaption>
+        </figure>
+        <figure class="shot shot--span">
+          <img src="assets/images/screens/05-farm-configuration.webp" alt="METHIX settings page with facility name, latitude and longitude, operational status, personnel access list and a geospatial map view." width="1500" height="1200" loading="lazy" decoding="async">
+          <figcaption><b>05 · Farm configuration</b>The farm's latitude and longitude live here — the same coordinates the backend sends to the climate API on every prediction — together with personnel access and operational status.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS -->
+  <section class="section section--light" id="business">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">The business</p>
+        <h2 class="section__title">Cleaner herds shouldn't cost farmers money. They should make them money.</h2>
+        <p class="section__lead">Methane leaving a cow is feed energy that never became milk or meat. That's why METHIX sells as an efficiency product first and a climate product second — the farmer's incentive and the planet's point in the same direction.</p>
+      </div>
+
+      <div class="market-row">
+        <div class="market-stat">
+          <b>8.1–8.6M</b>
+          <span>Head of cattle in Egypt alone — the addressable herd for a first market, before looking beyond one country.</span>
+        </div>
+        <div class="diff-list">
+          <div class="diff-item">
+            <b>Our own model, not a generic one</b>
+            <p>The Advanced Tuned Random Forest and the research dataset behind it are ours, and keep improving as more farms feed predictions back into it.</p>
+          </div>
+          <div class="diff-item">
+            <b>Feed engineered to the herd</b>
+            <p>Custom fibre, protein and fat blends tailored to whether the herd is dairy or being fattened for slaughter — built to international feed standards.</p>
+          </div>
+          <div class="diff-item">
+            <b>Built to keep shipping</b>
+            <p>Regular model retraining and software updates — not a one-off build left to go stale.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bmc">
+        <div class="bmc-cell">
+          <h4>Key partners</h4>
+          <ul>
+            <li>Ministry of Environment — regulatory alignment and national methane reporting</li>
+            <li>Feed factories — manufacturing partners that produce METHIX's custom feed formulas</li>
+          </ul>
+        </div>
+        <div class="bmc-col">
+          <div class="bmc-cell">
+            <h4>Key activities</h4>
+            <ul>
+              <li>Running and improving the SaaS platform and the model</li>
+              <li>Sales and marketing to farms</li>
+              <li>Awareness and field campaigns on livestock methane</li>
+            </ul>
+          </div>
+          <div class="bmc-cell">
+            <h4>Key resources</h4>
+            <ul>
+              <li>The curated dataset and the trained Advanced Tuned Random Forest model</li>
+              <li>The team — AI/ML, backend, full-stack</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bmc-cell">
+          <h4>Value propositions</h4>
+          <ul>
+            <li><strong>Protect milk and meat productivity</strong> — less methane means more feed energy converted into product</li>
+            <li><strong>Cut emissions</strong> from livestock, per animal, with evidence</li>
+            <li><strong>Unlock carbon revenue</strong> — documented, AI-explained reduction data farms can take to carbon markets</li>
+            <li><strong>Custom feed, not generic advice</strong> — blends formulated to the herd's actual fibre/protein needs, tailored to dairy or fattening cattle</li>
+          </ul>
+        </div>
+        <div class="bmc-col">
+          <div class="bmc-cell">
+            <h4>Customer relationship</h4>
+            <ul>
+              <li>Subscription tiers sized to the herd</li>
+              <li>Free onboarding consultation, then ongoing advisory</li>
+            </ul>
+          </div>
+          <div class="bmc-cell">
+            <h4>Channels</h4>
+            <ul>
+              <li>The METHIX web platform itself</li>
+              <li>Agri-tech events and exhibitions</li>
+              <li>Online pages, paid ads, and the feed-factory manufacturing channel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bmc-cell">
+          <h4>Customer segments</h4>
+          <ul>
+            <li><strong>B2B — farm owners and managers</strong>, dairy and beef</li>
+            <li>Nutrition specialists advising those farms</li>
+            <li>Sustainability and reporting teams in larger livestock organisations</li>
+          </ul>
+        </div>
+        <div class="bmc-cell bmc--cost">
+          <h4>Cost structure</h4>
+          <ul>
+            <li>Software development, hosting, and model retraining</li>
+            <li>Salaries</li>
+            <li>Marketing and sales</li>
+          </ul>
+        </div>
+        <div class="bmc-cell bmc--rev">
+          <h4>Revenue streams</h4>
+          <ul>
+            <li><strong>SaaS subscription</strong> — recurring, priced per head of cattle</li>
+            <li><strong>Custom feed sales</strong> — formulated per herd type (dairy vs. fattening), manufactured through feed-factory partners to international standards</li>
+            <li><strong>Carbon-credit facilitation</strong> — a share of verified credits the farm sells using METHIX records</li>
+            <li><strong>Anonymised insights</strong> — aggregated feed-performance reports for feed manufacturers</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rev-grid">
+        <div class="rev-card">
+          <span>Stream 01</span>
+          <b>Subscription, per head</b>
+          <p>The base of the business: a farm pays monthly per animal it monitors. Revenue grows with the herd, and the cost is set against feed savings — not against a sustainability budget.</p>
+        </div>
+        <div class="rev-card">
+          <span>Stream 02</span>
+          <b>Custom feed line</b>
+          <p>METHIX already knows exactly what a herd's feed is missing. That becomes a formulated blend — different for a dairy herd than for cattle being fattened for slaughter — manufactured with partner feed factories to international nutrition standards, and sold directly to the farm.</p>
+        </div>
+        <div class="rev-card">
+          <span>Stream 03</span>
+          <b>Carbon &amp; insights</b>
+          <p>Verified before/after records turn reductions into a sellable asset for the farm, and anonymised performance data is worth paying for to the feed industry. METHIX takes a share of the first and sells the second.</p>
+        </div>
+      </div>
+
+      <div class="gtm-row">
+        <span class="biz-chip">Go-to-market: large dairy farms first</span>
+        <span class="biz-chip">Then feed-factory channel</span>
+        <span class="biz-chip">Then multi-farm enterprise &amp; reporting</span>
+      </div>
+      <p class="source-line">METHIX does not issue certified carbon credits. Certification requires an accredited methodology and independent verification — METHIX supplies the monitoring record behind it.</p>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section section--dark" id="stack">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Under the hood</p>
+        <h2 class="section__title">The stack, and the checks that keep it honest.</h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <b>Frontend</b>
+          <div class="chip-row"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span><span class="chip">HTML5</span><span class="chip">CSS3</span></div>
+        </div>
+        <div class="stack-group">
+          <b>Backend</b>
+          <div class="chip-row"><span class="chip">C# / .NET</span><span class="chip">ASP.NET Core Web API</span><span class="chip">FastAPI (AI service)</span><span class="chip">REST + JWT</span></div>
+        </div>
+        <div class="stack-group">
+          <b>Data layer</b>
+          <div class="chip-row"><span class="chip">Microsoft SQL Server</span><span class="chip">SQL Server Management Studio</span></div>
+        </div>
+        <div class="stack-group">
+          <b>AI / ML</b>
+          <div class="chip-row"><span class="chip">Python</span><span class="chip">Advanced Tuned Random Forest</span><span class="chip">Scikit-learn</span><span class="chip">SHAP</span><span class="chip">Pandas / NumPy</span><span class="chip">Joblib</span></div>
+        </div>
+        <div class="stack-group">
+          <b>External</b>
+          <div class="chip-row"><span class="chip">Climate / weather data API</span></div>
+        </div>
+        <div class="stack-group">
+          <b>Quality &amp; security</b>
+          <div class="chip-row"><span class="chip">Postman</span><span class="chip">Unit testing</span><span class="chip">Snyk</span><span class="chip">OWASP ZAP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section--dark" id="team" style="background:var(--forest-2);">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Who's building this</p>
+        <h2 class="section__title">Three people, three disciplines, one deadline.</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar" style="background:var(--ember-2);">AA</div>
+          <h3>Abdallah Mahmoud Abdallah</h3>
+          <span class="team-role">CEO &amp; Founder — AI / Machine Learning</span>
+          <p>Dataset preparation, feature engineering, model experiments, tuning and SHAP explainability.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:var(--haze);">ZM</div>
+          <h3>Zead Abdelkader Mohamed</h3>
+          <span class="team-role">COO &amp; Founder — Full-Stack Developer</span>
+          <p>Full-stack development, dashboard implementation, farm and cow workflows, product integration.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:var(--sage);">FM</div>
+          <h3>Farah Abdallah Mubarak</h3>
+          <span class="team-role">CTO &amp; Founder — Backend Developer</span>
+          <p>Backend architecture, APIs, server-side logic, data management and prediction-workflow support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--dark" id="contact" style="background:var(--forest-2);">
+    <div class="container">
+      <div class="contact-card">
+        <p class="eyebrow">Let's talk</p>
+        <h2 class="section__title">Let's build something.</h2>
+        <p class="section__lead">Questions about METHIX, the model, or the business case — reach out any way that's easiest.</p>
+        <div class="pill-row">
+          <a class="pill" href="mailto:zeadhelal579@gmail.com"><span class="pill__icon">✉️</span>zeadhelal579@gmail.com</a>
+          <a class="pill" href="tel:+201002595281"><span class="pill__icon">📞</span>+20 10 0259 5281</a>
+          <a class="pill" href="https://www.linkedin.com/in/methane-intelligence-and-explainability-641312436" target="_blank" rel="noopener"><span class="pill__icon pill__icon--in">in</span>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="footer__brand">METHIX</span>
+    <span class="footer__fine">Measure. Explain. Reduce. — Methane Intelligence &amp; eXplainability for cattle farms.</span>
+  </div>
+</footer>
+
+<script src="js/navigation.js" defer></script>
+
+</body>
+</html>
